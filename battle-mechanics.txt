@@ -1,7 +1,7 @@
 THE LOST AGE BATTLE MECHANICS v1.05
 ============================= =====
 
-by Terence Fergusson &lt;tf_faq@dsl.pipex.com&gt;
+by Terence Fergusson <tf_faq@dsl.pipex.com>
 
 Golden Sun is copyright 2001-2003 Nintendo / CAMELOT.
 
@@ -722,7 +722,6 @@ The following labels will be used to differentiate them:
 
 
  ===================================================================
- ==                     EARTH ALIGNED CLASSES                     ==
  ===================================================================
                    HP   PP  Att  Def  Agi  Lck      Eth Wtr Fre Wnd
  -------------------------------------------------------------------
@@ -917,19 +916,19 @@ equipped, they will earn the following classes:
  =================================================================
   0-8  1  --- ---     Brute                  Hermit
   0-7  2  0-1 0-1     Ruffian                Elder
-  0-6  3  0-2 0-2       &quot;&quot;                    &quot;&quot; 
+  0-6  3  0-2 0-2       ""                    "" 
   0-5  4  0-2 0-3     Savage                 Scholar
   0-4  5  0-2 0-4     Barbarian              Savant 
-  --- 6-9 0-2 0-3        &quot;&quot;                   &quot;&quot;
+  --- 6-9 0-2 0-3        ""                   ""
   1-3 6,8 0-2 0-2     Berserker              Sage
-   1   7  0-1 0-1        &quot;&quot;                   &quot;&quot;
+   1   7  0-1 0-1        ""                   ""
    2   7  --- ---     Chaos Lord             Wizard
  =================================================================
   0-8 0-1  1  ---     Apprentice             Seer (A)
   0-7 0-2  2  0-1     Illusionist (E)        Diviner (A)
-  0-6 0-2  3  0-2         &quot;&quot;                   &quot;&quot;
+  0-6 0-2  3  0-2         ""                   ""
   0-5 0-2  4  0-3     Enchanter (E)          Shaman (A)
-  0-4 0-2  5  0-4         &quot;&quot;                   &quot;&quot;
+  0-4 0-2  5  0-4         ""                   ""
   1-3 0-2  6  0-2     Conjurer (E)           Druid (A)
    2  ---  7  ---     War Adept (E)          Oracle (A)
  -----------------------------------------------------------------
@@ -938,7 +937,7 @@ equipped, they will earn the following classes:
  =================================================================
   0-8 0-1 0-1  1      Swordsman (E)          Pilgrim (A)
   0-7 0-2 0-2  2      Defender (E)           Wanderer (A)
-  0-6 0-2 0-3  3         &quot;&quot;                     &quot;&quot;
+  0-6 0-2 0-3  3         ""                     ""
   0-5 0-2 0-4 4-5     Cavalier (E)           Ascetic (A)
   1-3 0-2 0-2  6      Guardian               Fire Monk
    2  --- ---  7      Protector              Guru (A)
@@ -958,7 +957,7 @@ equipped, they will earn the following classes:
   ---  5   4  ---     Ronin                  Pure Mage
  =================================================================
   --- ---  6   3      Medium                 Ninja
-  --- ---  3   6        &quot;&quot;                    &quot;&quot;
+  --- ---  3   6        ""                    ""
  =================================================================
 
 
@@ -974,19 +973,19 @@ equipped, they will earn the following classes:
  =================================================================
   0-8  1  --- ---     Brute                  Hermit
   0-7  2  0-1 0-1     Ruffian                Elder
-  0-6  3  0-2 0-2       &quot;&quot;                    &quot;&quot;
+  0-6  3  0-2 0-2       ""                    ""
   0-5  4  0-3 0-2     Savage                 Scholar
   0-4  5  0-4 0-2     Barbarian              Savant
-  --- 6-9 0-3 0-2        &quot;&quot;                    &quot;&quot;
+  --- 6-9 0-3 0-2        ""                    ""
   1-3 6,8 0-2 0-2     Berserker              Sage
-   1   7  0-1 0-1        &quot;&quot;                   &quot;&quot;
+   1   7  0-1 0-1        ""                   ""
    2   7  --- ---     Chaos Lord             Wizard
  =================================================================
   0-8 0-1  1  ---     Swordsman (F)          Pilgrim (W)
   0-7 0-2  2  0-1     Defender (F)           Wanderer (W)
-  0-6 0-2  3  0-2         &quot;&quot;                    &quot;&quot;
+  0-6 0-2  3  0-2         ""                    ""
   0-5 0-2  4  0-3     Cavalier (F)           Ascetic (W)
-  0-4 0-2  5  0-4         &quot;&quot;                   &quot;&quot;
+  0-4 0-2  5  0-4         ""                   ""
   1-3 0-2  6  0-2     Luminier               Water Monk
    2  ---  7  ---     Radiant                Guru (W)
  -----------------------------------------------------------------
@@ -995,7 +994,7 @@ equipped, they will earn the following classes:
  =================================================================
   0-8 0-1 0-1  1      Page                   Seer (W)
   0-7 0-2 0-2  2      Illusionist (F)        Diviner (W)
-  0-6 0-2 0-3  3         &quot;&quot;                    &quot;&quot;
+  0-6 0-2 0-3  3         ""                    ""
   0-5 0-2 0-4 4-5     Enchanter (F)          Shaman (W)
   1-3 0-2 0-2  6      Conjurer (F)           Druid (W)
    2  --- ---  7      War Adept (F)          Oracle (W)
@@ -1015,7 +1014,7 @@ equipped, they will earn the following classes:
   ---  5  ---  4      Ronin                  Pure Mage
  =================================================================
   --- ---  6   3      Ranger                 Dragoon
-  --- ---  3   6        &quot;&quot;                     &quot;&quot;
+  --- ---  3   6        ""                     ""
  =================================================================
 
 
@@ -1035,7 +1034,7 @@ classes that are defined as such:
   Finally, each of the classes that require an item (Pierrot, Tamer and Dark
 Mage (I)) will upgrade to:
 
-   2nd Level when you have 1 each of Affinity, Weakness and Neutral Djinn</span><span id="faqspan-2">
+   2nd Level when you have 1 each of Affinity, Weakness and Neutral Djinn
    3rd Level when you have 2 each of Affinity, Weakness and Neutral Djinn
    4th Level when you have 3 each of Affinity, Weakness and Neutral Djinn
 
@@ -1091,7 +1090,7 @@ lose and what Psynergy you will gain.
 
   Psynergy gained will be displayed in level order against the class in the
 group that first earns it.  Any Psynergy that upgrades will be shown as
-[Old --&gt; New] in the list.  All classes in the same group are assumed to
+[Old --> New] in the list.  All classes in the same group are assumed to
 inherit all the abilities from the previous classes in the group.  (An
 example group is Squire, Knight, Gallant, Lord, Slayer.)
 
@@ -1123,7 +1122,7 @@ Squire           1:Cure, 2:Quake, 4:Earthquake, 6:Spire, 10:Cure Well,
                    26:Potent Cure, 42:Stone Spire
 Knight            ---
 Gallant          7:Gaia, 19:Revive, 24:Mother Gaia, 54:Grand Gaia
-Lord             [Ragnarok --&gt; Odyssey]
+Lord             [Ragnarok --> Odyssey]
 Slayer            ---
  --------------------------------------------------------------------------
 Guard            1:Flare, 4:Fire, 6:Flare Wall, 8:Volcano, 12:Heat Wave,
@@ -1131,7 +1130,7 @@ Guard            1:Flare, 4:Fire, 6:Flare Wall, 8:Volcano, 12:Heat Wave,
                    48:Pyroclasm
 Soldier           ---
 Warrior          3:Guard, 9:Impair, 15:Protect, 26:Debilitate
-Champion         [Heat Wave --&gt; Liquifier]
+Champion         [Heat Wave --> Liquifier]
 Hero              ---
  --------------------------------------------------------------------------
 Wind Seer        1:Whirlwind, 4:Ray, 8:Plasma, 12:Sleep, 14:Storm Ray,
@@ -1167,7 +1166,7 @@ Mariner          1:Frost, 2:Ply, 4:Cool, 5:Cure Poison, 8:Tundra,
                    24:Glacier, 30:Break, 35:Pure Ply, 48:Megacool
 Privateer        6:Avoid
 Commander         ---
-Captain          [Diamond Dust --&gt; Diamond Berg]
+Captain          [Diamond Dust --> Diamond Berg]
 Admiral           ---
  ==========================================================================
 
@@ -1178,7 +1177,7 @@ Swordsman (E)    4:Thorn, 5:Cure Poison, 11:Cutting Edge, 13:Restore,
                    14:Briar, 19:Revive, 30:Break, 36:Nettle
 Defender (E)     1:Ply, 6:Avoid, 16:Ply Well, 34:Pure Ply
 Cavalier (E)     8:Wish, 22:Wish Well, 46:Pure Wish
-Guardian         [Cutting Edge --&gt; Plume Edge]
+Guardian         [Cutting Edge --> Plume Edge]
 Protector         ---
  --------------------------------------------------------------------------
 Swordsman (F)    2:Blast, 3:Guard, 5:Cure Poison, 10:Mad Blast,
@@ -1186,14 +1185,14 @@ Swordsman (F)    2:Blast, 3:Guard, 5:Cure Poison, 10:Mad Blast,
                    30:Break
 Defender (F)     1:Ply, 6:Avoid. 16:Ply Well, 34:Pure Ply
 Cavalier (F)     8:Wish, 22:Wish Well, 46:Pure Wish
-Luminier         [Cutting Edge --&gt; Plume Edge]
+Luminier         [Cutting Edge --> Plume Edge]
 Radiant           ---
  --------------------------------------------------------------------------
 Dragoon          1:Ply, 2:Blast, 4:Thorn, 5:Cure Poison, 6:Avoid, 8:Wish,
                    10:Mad Blast, 11:Cutting Edge, 13:Restore, 16:Ply Well,
                    17:Briar, 22:Wish Well, 27:Fiery Blast, 34:Pure Ply,
                    36:Nettle, 46:Pure Wish
-Templar          [Cutting Edge --&gt; Plume Edge]
+Templar          [Cutting Edge --> Plume Edge]
 Paladin           ---
  ==========================================================================
 
@@ -1205,7 +1204,7 @@ Apprentice       1:Delude, 6:Gaia, 9:Weaken, 11:Astral Blast, 14:Sleep,
                    39:Psy Drain, 54:Grand Gaia
 Illusionist (E)   ---
 Enchanter (E)    5:Impact, 6:Ward, 21:High Impact, 22:Resist
-Conjurer (E)     [Astral Blast --&gt; Thunder Mine]
+Conjurer (E)     [Astral Blast --> Thunder Mine]
 War Adept (E)     ---
  --------------------------------------------------------------------------
 Page             1:Delude, 6:Ward, 8:Volcano, 9:Weaken, 11:Astral Blast,
@@ -1213,7 +1212,7 @@ Page             1:Delude, 6:Ward, 8:Volcano, 9:Weaken, 11:Astral Blast,
                    39:Psy Drain, 48:Pyroclasm
 Illusionist (F)   ---
 Enchanter (F)    3:Guard, 5:Impact, 15:Protect, 21:High Impact
-Conjurer (F)     [Astral Blast --&gt; Thunder Mine]
+Conjurer (F)     [Astral Blast --> Thunder Mine]
 War Adept (F)     ---
  --------------------------------------------------------------------------
 Ninja            1:Gale, 4:Punji, 6:Fire Bomb, 7:Mist, 8:Thunderclap,
@@ -1221,7 +1220,7 @@ Ninja            1:Gale, 4:Punji, 6:Fire Bomb, 7:Mist, 8:Thunderclap,
                    18:Typhoon, 21:Shuriken, 26:Thunderbolt, 31:Annihilation,
                    36:Punji Strike, 40:Carpet Bomb, 44:Hurricane,
                    50:Thunderhead
-Disciple         [Death Plunge --&gt; Death Leap]
+Disciple         [Death Plunge --> Death Leap]
 Master            ---
  ==========================================================================
 
@@ -1288,7 +1287,7 @@ Ruffian           ---
 Savage           7:Spire, 9:Impair, 19:Revive, 20:Clay Spire, 23:Debilitate,
                    42:Stone Spire
 Barbarian         ---
-Berserker        [Planet Diver --&gt; Planetary]
+Berserker        [Planet Diver --> Planetary]
 Chaos Lord        ---
  --------------------------------------------------------------------------
 Samurai          3:Guardian, 5:Demon Spear, 6:Rockfall, 8:Lava Shower,
@@ -1296,9 +1295,9 @@ Samurai          3:Guardian, 5:Demon Spear, 6:Rockfall, 8:Lava Shower,
                    18:Demon Night, 21:Angel Spear, 24:Rockslide,
                    24:Molten Bath, 27:Magic Shield, 33:Helm Splitter,
                    40:Quick Strike, 48:Magma Storm, 54:Avalanche
-Ronin            [Dragon Cloud --&gt; Epicenter],
-                   [Demon Night --&gt; Thorny Grave],
-                   [Helm Splitter --&gt; Skull Splitter]
+Ronin            [Dragon Cloud --> Epicenter],
+                   [Demon Night --> Thorny Grave],
+                   [Helm Splitter --> Skull Splitter]
  ==========================================================================
 
 
@@ -1334,17 +1333,17 @@ Acrobat           ---
  --------------------------------------------------------------------------
 Tamer            1:Wild Wolf, 5:Cure Poison, 6:Impact, 10:Whiplash,
                    10:Salamander, 13:Restore, 20:Emu, 22:High Impact, 45:Roc
-Trainer          [Wild Wolf --&gt; Orc], [Salamander --&gt; Cerberus],
-                   [Emu --&gt; Harpy], [Roc --&gt; Wyvern], 7:Pixie, 32:Grand Golem
-Beastkeeper      [Orc --&gt; Dinox], [Pixie --&gt; Faery], [Cerberus --&gt; Chimera],
-                   [Harpy --&gt; Gryphon], [Grand Golem --&gt; Blue Dragon],
-                   [Wyvern --&gt; Living Armor],
+Trainer          [Wild Wolf --> Orc], [Salamander --> Cerberus],
+                   [Emu --> Harpy], [Roc --> Wyvern], 7:Pixie, 32:Grand Golem
+Beastkeeper      [Orc --> Dinox], [Pixie --> Faery], [Cerberus --> Chimera],
+                   [Harpy --> Gryphon], [Grand Golem --> Blue Dragon],
+                   [Wyvern --> Living Armor],
                    15:Elder Wood, 28:Lich
-Beast Lord       [Dinox --&gt; Troll], [Faery --&gt; Weird Nymph],
-                   [Chimera --&gt; Macetail], [Elder Wood --&gt; Estre Wood],
-                   [Gryphon --&gt; Minotaur], [Lich --&gt; Phoenix],
-                   [Blue Dragon --&gt; Fire Dragon],
-                   [Living Armor --&gt; Ghost Soldier], 24:Succubus,
+Beast Lord       [Dinox --> Troll], [Faery --> Weird Nymph],
+                   [Chimera --> Macetail], [Elder Wood --> Estre Wood],
+                   [Gryphon --> Minotaur], [Lich --> Phoenix],
+                   [Blue Dragon --> Fire Dragon],
+                   [Living Armor --> Ghost Soldier], 24:Succubus,
                    38:Manticore
  --------------------------------------------------------------------------
 Dark Mage (I)    1:Call Zombie, 9:Raging Heat, 17:Haunt, 19:Revive,
@@ -1394,13 +1393,13 @@ how normal damage work is useful for this section.
 Relative Attack is equal to (User's Attack - Target's Defense).  It has no
 upper limit, but cannot be less than 0.  Thus:
     Relative Attack = (User's Attack - Target's Defense).
-    If (Relative Attack &lt; 0), Relative Attack = 0.
+    If (Relative Attack < 0), Relative Attack = 0.
 
   Relative Power is equal to (User's Power - Target's Resist) for a specific
 element.  It cannot be greater than 200 and cannot be less than -200.  Thus:
     Relative Power = (User's Power - Target's Resist).
-    If (Relative Power &lt; -200), Relative Power = -200.
-    If (Relative Power &gt; 200), Relative Power = 200.
+    If (Relative Power < -200), Relative Power = -200.
+    If (Relative Power > 200), Relative Power = 200.
 
 
 
@@ -1552,12 +1551,12 @@ Let's summarise now.
 
 Relative Attack:
     Relative Attack = (User's Attack - Target's Defense).
-    If (Relative Attack &lt; 0), Relative Attack = 0.
+    If (Relative Attack < 0), Relative Attack = 0.
 
 Relative Power: 
     Relative Power = (User's Power - Target's Resist).
-    If (Relative Power &lt; -200), Relative Power = -200.
-    If (Relative Power &gt; 200), Relative Power = 200.
+    If (Relative Power < -200), Relative Power = -200.
+    If (Relative Power > 200), Relative Power = 200.
 
 Basic Physical Attack:
     Base Damage = Relative Attack
@@ -1980,7 +1979,7 @@ Summon Base for that summon to make that more clear.  In addition, summoning
 Daedalus is another special case.  Although the actual Daedalus summon is a
 normal summon in all respects, it also causes a second attack at the end of
 the next turn, which I have, for the purposes of this guide, called
-&lt;Missile&gt;.  This attack cannot be gotten on its own, and has its own special
+<Missile>.  This attack cannot be gotten on its own, and has its own special
 rules that will be covered in its entry in the below table.
 
 
@@ -2027,7 +2026,7 @@ FIRE ELEMENT SUMMONS
  Megaera       F    40   6 |||||6||||| +12.5% Attack (Party Only) : 50% Max
  Ulysses       F   160  12 |||||6||||| Target cannot move for next Action
  Daedalus      F   100   7 |||||6||||| At End of Next Turn, Missile is used
- &lt;Missile&gt;     F   250  15 =====A===== *Character's Power not used : Use 78
+ <Missile>     F   250  15 =====A===== *Character's Power not used : Use 78
  Iris          F   800  40 |||||6||||| **Revives all 'Downed' and Restores HP
 
  * Missile is the second part of Daedalus' attack, which occurs at the end
@@ -2127,7 +2126,7 @@ Magical Attack.  Otherwise, the following codes are used:
             in the whole game, however)
 
 
-  Remember that Elemental Physical Attacks use Relative Attack as their Base</span><span id="faqspan-3">
+  Remember that Elemental Physical Attacks use Relative Attack as their Base
 Damage, and have a range of 50% to 150%, instead of the 0% to 200% Magical
 Attacks have.
 

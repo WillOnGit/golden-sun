@@ -1,0 +1,768 @@
+  RESTORATIVE ABILITIES
+  ---------------------
+              Elm Dam  PP   Range   Used  Special
+Aura           F c 50   7 ====A==== TDB   ---
+Healing Aura   F c100  11 ====A==== TDB   ---
+Cool Aura______F_c200__16_====A====_TDB___---
+Cure           E c 70   3     1     TDB   ---
+Cure Well      E c150   7     1     TDB   ---
+Potent Cure____E_c300__10_____1_____TDB___---
+Ply            W c100   4     1     TDB   ---
+Ply Well       W c200   8     1     TDB   ---
+Pure Ply_______Wc1000__12_____1_____TDB___---
+Wish           W c 80   9 ====A==== TDB   ---
+Wish Well      W c160  13 ====A==== TDB   ---
+Pure Wish______W_c400__20_====A====_TDB___---
+Cure Poison    W        2     1     TDB   Remove 'Poison/Deadly Poison'
+Restore        W        3     1       B   Remove temporary Statuses
+Revive         E       15     1     TDB   Revive 'Downed' to 100% Max HP
+
+
+ -----------------------------------------------------------
+Aura           Fire:  Hex                         (9, 16, 33)
+ SERIES
+ ---
+Cure           Earth: Squire/Shaman               (1, 10, 26)
+ SERIES               Medium                      (3, 10, 26)
+               Water: Seer                        (1, 10, 26)
+                      Medium                      (3, 10, 26)
+               Wind:  Seer                        (1, 10, 26)
+                      Medium                      (3, 10, 26)
+ ---
+Ply            Earth: Defender/Dragoon            (1, 16, 34)
+ SERIES        Water: Water Seer/Cavalier/Dragoon (1, 16, 34)
+                      Mariner                     (2, 17, 35)
+               Fire:  Defender/Dragoon            (1, 16, 34)
+ ---
+Wish           Earth: Cavalier/Shaman (W)/Dragoon (8, 22, 46)
+ SERIES        Water: Cleric/Cavalier             (8, 22, 46)
+                      Shaman/Dragoon              (8, 22, 46)
+                      Ascetic                     (9, 24, 46)
+                      Scholar/White Mage         (12, 24, 46)
+               Fire:  Cavalier/Dragoon            (8, 22, 46)
+                      Ascetic (W)                 (8, 24, 46)
+               Wind:  Scholar/White Mage         (12, 24, 46)
+ -----------------------------------------------------------
+Cure Poison    Earth: Swordsman/Shaman (W)/Dragoon    (5)
+               Water: White Mage                      (1)
+                      Water Seer/Pilgrim/Cavalier     (5)
+                      Seer/Mariner/Dragoon            (5)
+               Fire:  Swordsman/Ascetic (W)/Dragoon   (5)
+               Wind:  White Mage                      (1)
+               Item:  Tamer                           (5)
+ ---
+Restore        Earth: Swordsman/Shaman (W)/Dragoon   (13)
+               Water: Water Seer/Pilgrim/Cavalier    (13)
+                      Seer/White Mage/Mariner/Dragoon(13)
+               Fire:  Swordsman/Ascetic (W)/Dragoon  (13)
+               Wind:  White Mage                     (13)
+               Item:  Tamer                          (13)
+ ---
+Revive         Earth: Gallant/Savage/Shaman          (19)
+                      Swordsman/Medium               (19)
+               Water: White Mage                     (17)
+                      Shaman/Cavalier (E)/Medium     (19)
+               Fire:  Savage                         (19)
+               Wind:  White Mage                     (17)
+                      Shaman/Medium                  (19)
+               Item:  Dark Mage (I)                  (19)
+ -----------------------------------------------------------
+
+
+
+  BASIC ATTACK ABILITIES
+  ----------------------
+              Elm Dam  PP   Range   Used  Special
+Quake          E   12   4    /2\      B   ---
+Earthquake     E   35   7   /|3|\     B   ---
+Quake Sphere___E___65__15__/||4||\____B___---
+Growth         E   25   4     1     TDB   Puzzle Solving Psynergy
+Mad Growth     E   60  10    /2\      B   ---
+Wild Growth____E__110__19___/|3|\_____B___---
+Thorn          E   35   6    /2\      B   ---
+Briar          E   70  11    |2|      B   ---
+Nettle_________E__140__23___/|3|\_____B___---
+Spire          E   40   5     1       B   ---
+Clay Spire     E   85  13    /2\      B   ---
+Stone Spire____E__160__22____|2|______B___---
+Gaia           E   40   7    /2\      B   ---
+Mother Gaia    E  100  17   /|3|\     B   ---
+Grand Gaia     E  200  32   ||3||     B   ---
+
+Frost          W   20   5    /2\    TDB   Puzzle Solving Psynergy
+Tundra         W   45   8    |2|      B   ---
+Glacier________W__100__15____|2|______B___---
+Douse          W   25   5    /2\    TDB   Puzzle Solving Psynergy
+Drench         W   60  10    |2|      B   ---
+Deluge_________W__120__20___/|3|\_____B___---
+Froth          W   28   5    /2\      B   ---
+Froth Sphere   W   65  12   /|3|\     B   ---
+Froth Spiral___W__150__31__/||4||\____B___---
+Ice            W   35   5     1       B   ---
+Ice Horn       W   70  11    /2\      B   ---
+Ice Missile____W__160__23____|2|______B___---
+Cool           W   35   6    /2\      B   ---
+Supercool      W   80  14   /|3|\     B   ---
+Megacool_______W__180__33__/||4||\____B___---
+Prism          W   40   7    /2\      B   ---
+Hail Prism     W   90  16   /|3|\     B   ---
+Freeze Prism   W  190  32   ||3||     B   ---
+
+Flare          F   15   4    /2\      B   ---
+Flare Wall     F   40   7    |2|      B   ---
+Flare Storm____F___80__12____|2|______B___---
+Blast          F   25   5    /2\      B   ---
+Mad Blast      F   50   9    |2|      B   ---
+Fiery Blast____F__110__19___/|3|\_____B___---
+Fire           F   35   6    /2\      B   ---
+Fireball       F   65  12   /|3|\     B   ---
+Inferno________F__140__23___||3||_____B___---
+Blast(Nova)    F   40   7    /2\      B   ---
+Nova           F   70  13   /|3|\     B   ---
+Supernova______F__150__31__/||4||\____B___---
+Beam           F   45   7    /2\      B   ---
+Cycle Beam     F   80  14   /|3|\     B   ---
+Searing Beam___F__170__36__/||4||\____B___---
+Volcano        F   45   6     1       B   ---
+Eruption       F   90  14    /2\      B   ---
+Pyroclasm______F__180__29___/|3|\_____B___---
+Fume           F   50   6     1       B   ---
+Serpent Fume   F  130  14     1       B   ---
+Dragon Fume    F  230  35     1       B   ---
+
+Bolt           A   20   4     1       B   ---
+Flash Bolt     A   40   7    /2\      B   ---
+Blue Bolt______A___90__14____|2|______B___---
+Slash          A   25   4     1       B   ---
+Wind Slash     A   50   9    /2\      B   ---
+Sonic Slash____A__120__20___/|3|\_____B___---
+Ray            A   35   6    /2\      B   ---
+Storm Ray      A   65  10    |2|      B   ---
+Destruct Ray___A__150__21____|2|______B___---
+Whirlwind      A   20   5    /2\    TDB   Puzzle Solving Psynergy
+Tornado        A   80  14   /|3|\     B   ---
+Tempest________A__160__27___||3||_____B___---
+Plasma         A   45   8    /2\      B   ---
+Shine Plasma   A  100  18   /|3|\     B   ---
+Spark Plasma   A  180  37  /||4||\    B   ---
+
+                   
+ -----------------------------------------------------------
+Quake          Earth: Squire                      (2,  4, 14)
+ SERIES       
+ ---
+Growth         Earth: Brute                       (1, 12, 28)
+ SERIES               Shaman                      (3, 12, 29)
+               Water: Seer                        (3, 12, 29)
+               Fire:  Brute                       (1, 12, 28)
+               Wind:  Seer                        (3, 12, 29)
+ ---
+Thorn          Earth: Swordsman                   (4, 14, 36)
+ SERIES               Dragoon                     (4, 17, 36)
+               Water: Cavalier (E)                (4, 14, 36)
+                      Dragoon                     (4, 17, 36)
+               Fire:  Dragoon                     (4, 17, 36)
+ ---
+Spire          Earth: Squire                      (6, 20, 42)
+ SERIES               Savage                      (7, 20, 42)
+               Fire:  Savage                      (7, 20, 42)
+ ---
+Gaia           Earth: Apprentice                  (6, 24, 54)
+ SERIES               Gallant                     (7, 24, 54)
+               Wind:  Enchanter (E)               (6, 24, 54)
+ -----------------------------------------------------------
+Frost          Water: Mariner                     (1,  8, 24)
+ SERIES               Water Seer                  (2,  9, 24)
+                 Equip Frost Jewel for Frost only
+ ---
+Douse          Water: Pilgrim/Ranger              (1, 12, 30)
+ SERIES        Fire:  Ascetic (W)/Ranger          (1, 12, 30)
+               Wind:  Ranger                      (1, 12, 30)
+                 Piers Inherent (Douse only)
+                 Equip Douse Drop for Douse only
+ ---
+Froth          Earth: Shaman (W)/Medium           (2, 14, 40)
+ SERIES        Water: Seer/Medium                 (2, 14, 40)
+               Wind:  Medium                      (2, 14, 40)
+ ---
+Ice            Water: Water Seer                  (4, 17, 42)
+ SERIES
+ ---
+Cool           Water: Mariner                     (4, 21, 48)
+ SERIES
+ ---
+Prism          Water: Pilgrim                     (6, 20, 52)
+ SERIES               Hermit/White Mage           (6, 22, 52)
+               Fire:  Ascetic (W)                 (6, 20, 52)
+               Wind:  Hermit/White Mage           (6, 22, 52)
+ -----------------------------------------------------------
+Flare          Fire:  Guard                       (1,  6, 18)
+ SERIES
+ ---
+Blast          Earth: Dragoon                     (2, 10, 27)
+ SERIES        Water: Dragoon                     (2, 10, 27)
+                      Cavalier (F)                (2, 10, 28)
+               Fire:  Dragoon                     (2, 10, 27)
+                      Swordsman                   (2, 10, 28)
+ ---
+Fire           Fire:  Guard                       (4, 14, 36)
+ SERIES
+ ---
+Blast(Nova)    Earth: Brute                       (6, 16, 40)
+ SERIES        Fire:  Brute                       (6, 16, 40)
+ ---
+Beam           Fire:  Flame User                  (7, 21, 41)
+ SERIES
+ ---
+Volcano        Water: Ascetic/Ranger              (8, 22, 48)
+ SERIES        Fire:  Guard/Ascetic/Page/Ranger   (8, 22, 48)
+               Wind:  Ascetic/Enchanter (F)/Ranger(8, 22, 48)
+ ---
+Fume           Fire:  Flame User                  (5, 26, 47)
+ SERIES
+ -----------------------------------------------------------
+Bolt           Earth: Medium                      (1,  6, 22)
+ SERIES               Shaman (A)                  (2,  6, 22)
+               Water: Medium                      (1,  6, 22)
+               Wind:  Medium                      (1,  6, 22)
+                      Seer                        (2,  6, 22)
+               
+ ---
+Slash          Water: Ranger                      (1, 10, 30)
+ SERIES        Fire:  Ascetic (A)/Ranger          (1, 10, 30)
+               Wind:  Pilgrim/Ranger              (1, 10, 30)
+ ---
+Ray            Wind:  Wind Seer                   (4, 14, 36)
+ SERIES
+ ---
+Whirlwind      Wind:  Wind Seer                   (1, 18, 44)
+ SERIES
+ ---
+Plasma         Water: White Mage                  (8, 26, 46)
+ SERIES               Hermit                      (8, 26, 50)
+               Fire:  Ascetic (A)                 (9, 26, 50)
+               Wind:  White Mage                  (8, 26, 46)
+                      Wind Seer/Hermit            (8, 26, 50)
+                      Pilgrim                     (9, 26, 50)
+ -----------------------------------------------------------
+
+
+
+  STATUS ABILITIES
+  ----------------
+              Elm Dam  PP   Range   Used  Special
+Impact         A  ---   7     1       B   +25% Attack : 50% Max
+High Impact____A__---__12_||||A||||___B___+12.5% Attack : 50% Max
+Guard          F  ---   3     1       B   +25% Defense : 50% Max
+Protect________F__---___5_||||A||||___B___+12.5% Defense : 50% Max
+Ward           A  ---   3     1       B   +40 Resistance : 80 Max
+Resist_________A__---___5_||||A||||___B___+20 Resistance : 80 Max
+Dull           A  ---   6     1       B   -25% Attack : 50% Max
+Blunt__________A__---__11____/2\______B___-12.5% Attack : 50% Max
+Impair         F  ---   4     1       B   -25% Defense : 50% Max
+Debilitate_____F__---___6____/2\______B___-12.5% Defense : 50% Max
+Weaken         A  ---   4     1       B   -40 Resistance : 80 Max
+Enfeeble_______A__---___6____/2\______B___-20 Resistance : 80 Max
+Drain          A   50s  3     1       B   Heal 100% Damage as HP
+Psy Drain______A___15s__0_____1_______B___Drain 100% PP instead of HP
+Haunt          E  ---   5    |2|      B   Inflict 'Haunt'
+Curse          E  ---   6     1       B   Inflict 'Countdown'
+Condemn________E__---___8_____1_______B___Inflict 'Downed'
+Bind           A  ---   4     1       B   Inflict 'Psynergy Seal'
+Delude         A  ---   4    |2|      B   Inflict 'Delusion'
+Sleep          A  ---   5    |2|      B   Inflict 'Sleep'
+Break          W  ---   5 ||||A||||   B   Remove positive attributes
+
+
+ -----------------------------------------------------------
+Impact        Earth: Enchanter                       (5, 21)
+ SERIES       Water: Hermit                          (1, 21)
+              Fire:  Enchanter                       (5, 21)
+              Wind:  Hermit                          (1, 21)
+                     Magician/Enchanter              (5, 21)
+              Item:  Tamer                           (6, 22)
+ ---
+Guard         Water: Cavalier (F)                    (3, 15)
+ SERIES       Fire:  Soldier/Swordsman/Enchanter     (3, 15)
+              Wind:  Enchanter (F)                   (3, 15)
+ ---
+Ward          Earth: Enchanter                       (6, 22)
+ SERIES              Shaman (A)                      (7, 23)
+              Water: Ranger                          (6, 24)
+                     White Mage                      (9, 31)
+              Fire:  Enchanter                       (6, 22)
+                     Ascetic (A)/Ranger              (6, 24)
+              Wind:  Mage/Enchanter                  (6, 22)
+                     Shaman                          (7, 23)
+                     Ascetic (A)/Ranger              (6, 24)
+                     White Mage                      (9, 31)
+ ---
+Dull          Water: White Mage                     (11, 37)
+ SERIES       Wind:  White Mage                     (11, 37)
+ ---
+Impair        Earth: Savage                          (9, 23)
+ SERIES       Fire:  Savage                          (9, 23)
+                     Warrior                         (9, 26)
+                     Flame User                     (10, 23)
+ ---
+Weaken        Earth: Apprentice                      (9, 25)
+ SERIES       Fire:  Page                            (9, 25)
+              Wind:  Enchanter                       (9, 25)
+ ---
+Drain         Earth: Medium                         (31, 36)
+ SERIES              Apprentice/Shaman (A)          (31, 39)
+              Water: Medium                         (31, 36)
+                     Hermit                         (31, 39)
+                     Ranger                         (33, 41)
+              Fire:  Page                           (31, 39)
+                     Ascetic (A)/Ranger             (33, 41)
+              Wind:  Medium                         (31, 36)
+                     Hermit/Seer/Enchanter          (31, 39)
+                     Pilgrim/Ranger                 (33, 41)
+              Item:  Dark Mage (I)                  (31, 39)
+ ---
+Haunt         Earth: Apprentice                 (17, 20)
+ SERIES              Medium                     (17, 20, 29)
+                     Brute                      (17, 24, 29)
+              Water: Medium                     (17, 20, 29)
+              Fire:  Enchanter (E)              (17, 20)
+                     Brute                      (17, 24, 29)
+              Wind:  Medium                     (17, 20, 29)
+              Item:  Dark Mage (I)              (17, 24, 29)
+ -----------------------------------------------------------
+Bind          Earth: Shaman (A)                     (18)
+              Water: Hermit/Ranger                  (18)
+              Fire:  Ascetic (A)/Ranger             (18)
+              Wind:  Wind Seer                      (17)
+                     Hermit/Seer/Pilgrim/Ranger     (18)
+ ---
+Delude        Earth: Apprentice                      (1)
+              Fire:  Page                            (1)
+              Wind:  Enchanter                       (1)
+ ---
+Sleep         Earth: Apprentice                     (14)
+              Fire:  Page                           (14)
+              Wind:  Wind Seer                      (12)
+                     Enchanter                      (14)
+ ---
+Break         Earth: Swordsman/Shaman (W)           (30)
+              Water: Water Seer/Hermit/Cavalier     (30)
+                     Seer/Mariner                   (30)
+                     Pilgrim/Ranger                 (34)
+              Fire:  Swordsman                      (30)
+                     Ascetic (W)/Ranger             (34)
+              Wind:  Hermit                         (30)
+                     Ranger                         (34)
+ -----------------------------------------------------------
+
+
+
+  ADVANCED CLASS ABILITIES
+  ------------------------
+              Elm Dam  PP   Range   Used  Special
+Ragnarok       E a 35   7     1       B   ---
+Cutting Edge   W a 32   5     1       B   ---
+Diamond Dust   W a 34   6     1       B   ---
+Heat Wave      F a 33   6     1       B   ---
+Planet Diver   F a 36   7     1       B   ---
+Astral Blast___A_a_32___5_____1_______B___---
+Oddysey        E a 95  18     1       B   ---
+Plume Edge     W a 80  15     1       B   ---
+Diamond Berg   W a 92  17     1       B   ---
+Liquifier      F a 90  17     1       B   ---
+Planetary      F a 98  19     1       B   ---
+Thunder Mine   A a 85  16     1       B   ---
+
+Punji          E   45   7    /2\      B   ---
+Punji Trap     E   85  13    |2|      B   ---
+Punji Strike___E__150__24___/|3|\_____B___---
+Fire Bomb      F   35   5    /2\      B   ---
+Cluster Bomb   F   65  11   /|3|\     B   ---
+Carpet Bomb____F__130__29__/||4||\____B___---
+Gale           A   18   3    /2\    TDB   Puzzle Solving Psynergy
+Typhoon        A   75  12   /|3|\     B   ---
+Hurricane______A__150__25___||3||_____B___---
+Thunderclap    A   50   9    /2\      B   ---
+Thunderbolt    A  110  19   /|3|\     B   ---
+Thunderstorm___A__190__39__/||4||\____B___---
+Mist           A  ---   4    |2|      B   Inflict 'Delusion'
+Shuriken       A m 80%  8    |2|      B   ---
+Annihilation___E_m150%_18_____1_______B___Inflict 'Downed'
+Death Plunge   A a 40  14     1       B   Inflict 'Stun'
+Death Leap     A a110  22     1       B   Inflict 'Stun'
+
+Lava Shower    F   40   4     1       B   ---
+Molten Bath    F   70  12    /2\      B   ---
+Magma Storm____F__120__27___/|3|\_____B___---
+Rockfall       E   30   5    /2\      B   ---
+Rockslide      E   90  15   /|3|\     B   ---
+Avalanche______E__160__30___||3||_____B___---
+Demon Spear    A  ---   7     1       B   +25% Attack : 50% Max
+Angel Spear____A__---__12_||||A||||___B___+12.5% Attack : 50% Max
+Guardian       F  ---   3     1       B   +25% Defense : 50% Max
+Protector______F__---___5_||||A||||___B___+12.5% Defense : 50% Max
+Magic Shell    A  ---   3     1       B   +40 Resistance : 80 Max
+Magic Shield___A__---___5_||||A||||___B___+20 Resistance : 80 Max
+Quick Strike___A_m180%_12_____1_______B___---
+Dragon Cloud   F   80   6     1       B   ---
+Demon Night    E   60  12    |2|      B   Inflict 'Haunt'
+Helm Splitter__E_a_30___8_____1_______B___Inflict 'Downed'
+Epicenter      F  210  33     1       B   ---
+Thorny Grave   E  170  24    |2|      B   Inflict 'Haunt'
+Skull Splitter E a 30   8     1       B   Inflict 'Downed'
+
+              
+ -----------------------------------------------------------
+Ragnarok       Earth: Squire                         (13)
+ ---
+Cutting Edge   Earth: Swordsman/Dragoon              (11)
+               Water: Cavalier/Dragoon               (11)
+               Fire:  Swordsman/Dragoon              (11)
+ ---
+Diamond Dust   Water: Mariner                        (12)
+ ---
+Heat Wave      Fire:  Guard                          (12)
+ ---
+Planet Diver   Earth: Brute                          (13)
+               Fire:  Brute                          (13)
+ ---
+Astral Blast   Earth: Apprentice                     (11)
+               Fire:  Page                           (11)
+               Wind:  Enchanter                      (11)
+ -----------------------------------------------------------
+Odyssey        Earth: Lord                       [Ragnarok]
+ ---
+Plume Edge     Earth: Guardian/Templar           [Cutting Edge]
+               Water: Guardian/Luminier          [Cutting Edge]
+               Fire:  Luminier/Templar           [Cutting Edge]
+ ---
+Diamond Berg   Water: Captain                    [Diamond Dust]
+ ---
+Liquifier      Fire:  Champion                   [Heat Wave]
+ ---
+Planetary      Earth: Berserker                  [Planet Diver]
+               Fire:  Berserker                  [Planet Diver]
+ ---
+Thunder Mine   Earth: Conjurer (E)               [Astral Blast]
+               Fire:  Conjurer (F)               [Astral Blast]
+               Wind:  Conjurer (E)/Conjurer (F)  [Astral Blast]
+ -----------------------------------------------------------
+Punji          Earth: Ninja                      ( 4, 15, 36)
+ SERIES        Fire:  Ninja                      ( 4, 15, 36)
+               Wind:  Ninja                      ( 4, 15, 36)
+ ---
+Fire Bomb      Earth: Ninja                      ( 6, 16, 40)
+ SERIES        Fire:  Ninja                      ( 6, 16, 40)
+               Wind:  Ninja                      ( 6, 16, 40)
+ ---
+Gale           Earth: Ninja                      ( 1, 18, 44)
+ SERIES        Fire:  Ninja                      ( 1, 18, 44)
+               Wind:  Ninja                      ( 1, 18, 44)
+ ---
+Thunderclap    Earth: Ninja                      ( 8, 26, 50)
+ SERIES        Fire:  Ninja                      ( 8, 26, 50)
+               Wind:  Ninja                      ( 8, 26, 50)
+ ---
+Mist           Earth: Ninja                           (7)
+               Fire:  Ninja                           (7)
+               Wind:  Ninja                           (7)
+ ---
+Shuriken       Earth: Ninja                          (21)
+               Fire:  Ninja                          (21)
+               Wind:  Ninja                          (21)
+ ---
+Annihilation   Earth: Ninja                          (31)
+               Fire:  Ninja                          (31)
+               Wind:  Ninja                          (31)
+ ---
+Death Plunge   Earth: Ninja                          (12)
+               Fire:  Ninja                          (12)
+               Wind:  Ninja                          (12)
+ ---
+Death Leap     Earth: Disciple                   [Death Plunge]
+               Fire:  Disciple                   [Death Plunge]
+ -----------------------------------------------------------
+Lava Shower    Earth: Samurai                     (8, 22, 48)
+ SERIES        Fire:  Samurai                     (8, 22, 48)
+ ---
+Rockfall       Earth: Samurai                     (6, 24, 54)
+ SERIES        Fire:  Samurai                     (6, 24, 54)
+ ---
+Demon Spear    Earth: Samurai                         (5, 21)
+ SERIES        Fire:  Samurai                         (5, 21)
+ ---
+Guardian       Earth: Samurai                         (3, 15)
+ SERIES        Fire:  Samurai                         (3, 15)
+ ---
+Magic Shell    Earth: Samurai                        (10, 27)
+ SERIES        Fire:  Samurai                        (10, 27)
+ ---
+Quick Strike   Earth: Samurai                        (40)
+               Fire:  Samurai                        (40)
+ ---
+Dragon Cloud   Earth: Samurai                        (12)
+               Fire:  Samurai                        (12)
+ ---
+Demon Night    Earth: Samurai                        (18)
+               Fire:  Samurai                        (18)
+ ---
+Helm Splitter  Earth: Samurai                        (33)
+               Fire:  Samurai                        (33)
+ ---
+Epicenter      Earth: Ronin                       [Dragon Cloud]
+               Fire:  Ronin                       [Dragon Cloud]
+ ---
+Thorny Grave   Earth: Ronin                       [Demon Night]
+               Fire:  Ronin                       [Demon Night]
+ ---
+Skull Splitter Earth: Ronin                       [Helm Splitter]
+               Fire:  Ronin                       [Helm Splitter]
+ -----------------------------------------------------------
+
+
+
+  MYSTERIOUS CARD UNIQUE ABILITIES
+  --------------------------------
+              Elm Dam  PP   Range   Used  Special
+Sabre Dance    E m150%  7     1       B   ---
+Backstab_______A_a_35__16_____1_______B___Inflict 'Downed'
+Fire Breath____F___85D_13____|2|______B___---
+Juggle         F   40   7    /2\      B   ---
+Heat Juggle    F   75  13   /|3|\     B   ---
+Fiery Juggle___F__150__25___||3||_____B___---
+Flame Card     F   60  11    /2\      B   ---
+Thunder Card   A  100  17    |2|      B   ---
+Bramble Card   E  130  22    |2|      B   ---
+Frost Card_____W__175__28____|2|______B___---
+Baffle Card    A  ---   4    |2|      B   Inflict 'Delusion'
+Sword Card     F  ---   6     1       B   -25% Attack : 50% Max
+Sleep Card     A  ---   5    |2|      B   Inflict 'Sleep'
+Death Card     E  ---   8     1       B   Inflict 'Downed'
+
+
+ -----------------------------------------------------------
+Sabre Dance    Item: Pierrot                         (10)
+ ---
+Backstab       Item: Punchinello                     (29)
+ ---
+Fire Breath    Item: Pierrot                         (22)
+ ---
+Juggle         Item: Pierrot                     ( 5, 17, 37)
+ SERIES
+ ---
+Flame Card     Item: Pierrot                     (13, 25, 33, 46)
+ SERIES
+ ---
+Baffle Card    Item: Pierrot                     ( 3,  8, 15, 27)
+ SERIES
+ -----------------------------------------------------------
+
+
+
+  TRAINER'S WHIP UNIQUE ABILITIES
+  -------------------------------
+              Elm Dam  PP   Range   Used  Special
+Whiplash       A m140%  6     1       B   ---
+Wild Wolf     ---a 30   3     1       B   ---
+Salamander     F   45D  7    |2|      B   ---
+Emu            A a 75  10     1       B   ---
+Roc___________---a140__22_____1_______B___---
+Orc           ---a 35   3     1       B   ---
+Pixie          W c115   5     1       B   ---
+Cerberus       F   50D  7    |2|      B   ---
+Harpy          A a 80  10     1       B   ---
+Grand Golem    F  120D 17   ||3||     B   ---
+Wyvern_________E_a150__22_____1_______B___---
+Dinox          E a 40   3     1       B   ---
+Faery          W c120   5     1       B   ---
+Chimera        F   55D  7    |2|      B   ---
+Elder Wood     W c170  14 ====A====   B   ---
+Gryphon        A a 85  10     1       B   Sometimes Hits for 2x Damage
+Lich           E  ---  10     1       B   Revive 'Downed' to 100% Max HP
+Blue Dragon    W  130D 17   ||3||     B   ---
+Living Armor___E_a130__17_____1_______B___---
+Troll          E a 45   3     1       B   ---
+Weird Nymph    W c125   5     1       B   ---
+Macetail       F   60D  7    |2|      B   ---
+Estre Wood     W c180  14 ====A====   B   ---
+Minotaur       E a 90  10     1       B   ---
+Succubus       W c250   9     1       B   ---
+Phoenix        F  ---  10     1       B   Revive 'Downed' to 100% Max HP
+Fire Dragon    F  140D 17   ||3||     B   ---
+Manticore      F c300  18 ====A====   B   ---
+Ghost Soldier  A a170  22     1       B   Pierce 50% Defense
+
+
+ -----------------------------------------------------------
+Whiplash       Item: Tamer                           (10)
+ ---
+Wild Wolf      Item: Tamer                           ( 1)
+ ---
+Salamander     Item: Tamer                           (10)
+ ---
+Emu            Item: Tamer                           (20)
+ ---
+Roc            Item: Tamer                           (45)
+ -----------------------------------------------------------
+Orc            Item: Trainer                      [Wild Wolf]
+ ---
+Pixie          Item: Trainer                         ( 7)
+ ---
+Cerberus       Item: Trainer                      [Salamander]
+ ---
+Harpy          Item: Trainer                      [Emu]
+ ---
+Grand Golem    Item: Trainer                         (32)
+ ---
+Wyvern         Item: Trainer                      [Roc]
+ -----------------------------------------------------------
+Dinox          Item: Beastkeeper                  [Orc]
+ ---
+Faery          Item: Beastkeeper                  [Pixie]
+ ---
+Chimera        Item: Beastkeeper                  [Cerberus]
+ ---
+Elder Wood     Item: Beastkeeper                     (15)
+ ---
+Gryphon        Item: Beastkeeper                  [Harpy]
+ ---
+Lich           Item: Beastkeeper                     (28)
+ ---
+Blue Dragon    Item: Beastkeeper                  [Grand Golem]
+ ---
+Living Armor   Item: Beastkeeper                  [Wyvern]
+ -----------------------------------------------------------
+Troll          Item: Beast Lord                   [Dinox]
+ ---
+Weird Nymph    Item: Beast Lord                   [Faery]
+ ---
+Macetail       Item: Beast Lord                   [Chimera
+ ---
+Estre Wood     Item: Beast Lord                   [Elder Wood]
+ ---
+Minotaur       Item: Beast Lord                   [Gryphon]
+ ---
+Succubus       Item: Beast Lord                      (24)
+ ---
+Phoenix        Item: Beast Lord                   [Lich]
+ ---
+Fire Dragon    Item: Beast Lord                   [Blue Dragon]
+ ---
+Manticore      Item: Beast Lord                      (38)
+ ---
+Ghost Soldier  Item: Beast Lord                   [Living Armor]
+ -----------------------------------------------------------
+
+
+
+  TOMEGATHERICON UNIQUE ABILITIES
+  -------------------------------
+              Elm Dam  PP   Range   Used  Special
+Call Zombie    W a 40   5     1       B   ---
+Call Demon     E m190% 13     1       B   May do [Target's HP - 1] Dam instd.
+Call Dullahan__A_m300%_21_____1_______B___---
+Raging Heat    F   45   9   /|3|\     B   ---
+Fiery Abyss    F   90  18   ||3||     B   ---
+Dire Inferno___F__200__32__/||4||\____B___---
+Poison Flow    A  125  28   ||3||     B   Inflict 'Deadly Poison'
+Fire Puppet    E  ---   7    |2|      B   Inflict 'Stun'
+
+
+ -----------------------------------------------------------
+Call Zombie    Item: Dark Mage (I)                   ( 1)
+Call Demon     Item: Necrolyte                       (26)
+Call Dullahan  Item: Necromage                       (47)
+ ---
+Raging Heat    Item: Dark Mage (I)               ( 9, 22, 53)
+ SERIES
+ ---
+Poison Flow    Item: Dark Mage (I)                   (33)
+ ---
+Fire Puppet    Item: Dark Mage (I)                   (20)
+ -----------------------------------------------------------
+
+
+
+  MISCELLANEOUS ABILITIES
+  -----------------------
+              Elm  PP   Range   Used  Desc
+Avoid          W    5     1     TD    Encounter fewer monsters.
+Retreat        E    6     1     TD    Return to the dungeon's entrance.
+Move           F    2     1     TD    Move an object on the ground.
+Mind Read______A____1_____1_____TD____Read someone's mind.
+Reveal         A    1     1     TD    Perceive hidden truths.
+Parch          W    2     1     TD    Evaporate standing water.
+Sand           E    2     1     TD    Melt into sand.
+Blaze__________F____1_____1_____TD____Manipulate flames.
+Lash           A    1     1     TD    Lift and move very light objects.
+Pound          F    2     1     TD    Drive objects into the ground.
+Scoop          E    1     1     TD    Dig in soft ground.
+Tremor         E    1     1     TD    Shake objects left and right.
+Cyclone        A    2     1     TD    Conjure wind to scatter weeds.
+Burst          F    2     1     TD    Break cracked objects.
+Grind          E    2     1     TD    Pulverise large objects.
+Hover          A    2     1     TD    Hover in the air.
+Teleport_______A____3_____1_____TD____Teleport at will.
+Catch          E    1     1     TD    Grab light objects from afar.
+Force         ---   2     1     TD    Strike a distant object.
+Lift           W    2     1     TD    Lift an object vertically.
+Halt           A    2     1     TD    Stop a moving object.
+Cloak          W    1     1     TD    Hide away in shadows.
+Carry          E    2     1     TD    Lift and move light objects.
+
+
+ -----------------------------------------------------------
+Avoid         Earth: Defender/Dragoon                (6)
+              Water: Cavalier/Privateer/Dragoon      (6)
+              Fire:  Defender/Dragoon                (6)
+              Item:  Pierrot                         (6)
+ ---
+Retreat         Felix Inherent
+                Isaac Inherent
+ ---
+Move            Felix Inherent
+                Isaac Inherent
+                Garet Inherent
+ ---
+Mind Read       Sheba Inherent
+                Ivan Inherent
+ ---
+Reveal          Sheba Inherent   (Learned in Air's Rock)
+                Ivan Inherent
+ ---
+Parch           Piers Inherent   (Learned in Aqua Rock)
+ ---
+Sand            Felix Inherent   (Learned in Gaia Rock)
+ ---
+Blaze           Jenna Inherent   (Learned in Magma Rock)
+ ---
+Lash            Equip Lash Pebble
+ ---
+Pound           Equip Pound Cube
+ ---
+Scoop           Equip Scoop Gem
+ ---
+Tremor          Equip Tremor Bit
+ ---
+Cyclone         Equip Cyclone Chip
+ ---
+Burst           Equip Burst Brooch
+ ---
+Grind           Equip Grindstone (Only Felix and Isaac can equip)
+ ---
+Hover           Equip Hover Jade
+ ---
+Teleport        Equip Teleport Lapis
+ ---
+Catch           Equip Catch Beads
+ ---
+Force           Equip Orb of Force
+ ---
+Lift            Equip Lifting Gem
+ ---
+Halt            Equip Halt Gem
+ ---
+Cloak           Equip Cloak Ball
+ ---
+Carry           Equip Carry Stone
+ -----------------------------------------------------------
