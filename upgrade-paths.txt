@@ -1,134 +1,133 @@
-=====================
 Squire
 Knight
 Gallant
 Lord
 Slayer
---------------------------------------------------------------------------
+
 Guard
 Soldier
 Warrior
 Champion
 Hero
---------------------------------------------------------------------------
+
 Wind Seer
 Magician
 Mage
 Magister
 Sorcerer
---------------------------------------------------------------------------
+
 Water Seer
 Scribe
 Cleric
 Paragon
 Angel
-====================
+
 Flame User
 Witch
 Hex
 Fire Master
 Justice
---------------------------------------------------------------------------
+
 Mariner
 Privateer
 Commander
 Captain
 Admiral
-=====================
+
 Swordsman (E)
 Defender (E)
 Cavalier (E)
 Guardian
 Protector
---------------------------------------------------------------------------
+
 Swordsman (F)
 Defender (F)
 Cavalier (F)
 Luminier
 Radiant
---------------------------------------------------------------------------
+
 Dragoon
 Templar
 Paladin
-====================
+
 Apprentice
 Illusionist (E)
 Enchanter (E)
 Conjurer (E)
 War Adept (E)
---------------------------------------------------------------------------
+
 Page
 Illusionist (F)
 Enchanter (F)
 Conjurer (F)
 War Adept (F)
---------------------------------------------------------------------------
+
 Ninja
 Disciple
 Master
-=====================
+
 Seer (W)
 Diviner (W)
 Shaman (W)
 Druid (W)
 Oracle (W)
---------------------------------------------------------------------------
+
 Seer (A)
 Diviner (A)
 Shaman (A)
 Druid (A)
 Oracle (A)
---------------------------------------------------------------------------
+
 Medium
 Conjurer (D)
 Dark Mage (D)
-====================
+
 Pilgrim (W)
 Wanderer (W)
 Ascetic (W)
 Water Monk
 Guru (W)
---------------------------------------------------------------------------
+
 Pilgrim (A)
 Wanderer (A)
 Ascetic (A)
 Fire Monk
 Guru (A)
---------------------------------------------------------------------------
+
 Ranger
 Bard
 Warlock
-==========================
+
 Brute
 Ruffian
 Savage
 Barbarian
 Berserker
 Chaos Lord
---------------------------------------------------------------------------
+
 Samurai
 Ronin
-==========================
+
 Hermit
 Elder
 Scholar
 Savant
 Sage
 Wizard
---------------------------------------------------------------------------
+
 White Mage
 Pure Mage
-=====================
+
 Pierrot
 Harlequin
 Punchinello
 Acrobat
---------------------------------------------------------------------------
+
 Tamer
 Trainer
 Beastkeeper
 Beast Lord
---------------------------------------------------------------------------
+
 Dark Mage (I)
 Crypt Lord
 Necrolyte
