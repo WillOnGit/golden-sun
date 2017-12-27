@@ -1,0 +1,54 @@
+'Physics'
+
+The stat you actually see is worked out in the following manner:
+(Base Stat + Djinni Bonuses + Equip Bonus) * Class Bonus
+
+
+
+(Character goals DONE + Djinni bonuses DONE + Item bonuses NOT DONE) * Class Bonus NOT DONE
+
+
+
+All the characters start off with 5 levels in a particular element, and 0
+levels in all others.  The characters and their respective elements are:
+
+Name     Element
+Felix    Earth
+Piers    Water
+Jenna    Fire
+Sheba    Wind
+
+Isaac    Earth
+Mia      Water
+Garet    Fire
+Ivan     Wind
+
+
+
+In addition to having starting elemental levels, each character has the
+following base Power and Resist for each element, depending on their own
+primary element.  (Note that this does *not* include the +25 to Power and
+Resist the character gets for the element they have L5 in.)
+
+                 Earth        Water          Fire          Wind
+   Primary   Power Resist  Power Resist  Power Resist  Power Resist
+    Earth      79    89      78    88      76    86      77    87
+    Water      78    88      79    89      77    87      76    86
+    Fire       76    86      77    87      79    89      78    88
+    Wind       77    87      76    86      78    88      79    89
+
+
+
+Now for Dominance.  First, we define each elements relationship with the
+others.  Please keep in mind though, that these are story-based
+relationships; they don't really have that much to do with actual damage,
+which we will be covering later:
+
+Primary   Neutral   Weakness  Affinity
+Earth     Water      Wind      Fire
+Water     Earth      Fire      Wind
+Fire      Wind     Water     Earth
+Wind      Fire     Earth     Water
+
+Primary dominates Neutral dominates Weakness dominates Affinity
+
