@@ -1,0 +1,110 @@
+Squire	1:Cure, 2:Quake, 4:Earthquake, 6:Spire, 10:Cure Well, 13:Ragnarok, 14:Quake Sphere, 20:Clay Spire, 26:Potent Cure, 42:Stone Spire
+Knight	\N
+Gallant	7:Gaia, 19:Revive, 24:Mother Gaia, 54:Grand Gaia
+Lord	[Ragnarok:Odyssey]
+Slayer	\N
+Guard	1:Flare, 4:Fire, 6:Flare Wall, 8:Volcano, 12:Heat Wave, 14:Fireball, 18:Flare Storm, 22:Eruption, 36:Inferno, 48:Pyroclasm
+Soldier	\N
+Warrior	3:Guard, 9:Impair, 15:Protect, 26:Debilitate
+Champion	[Heat Wave:Liquifier]
+Hero	\N
+Wind Seer	1:Whirlwind, 4:Ray, 8:Plasma, 12:Sleep, 14:Storm Ray, 17:Bind, 18:Tornado, 26:Shine Plasma, 36:Destruct Ray, 44:Tempest, 50:Spark Plasma
+Magician	5:Impact, 21:High Impact
+Mage	6:Ward, 22:Resist
+Magister	\N
+Sorcerer	\N
+Water Seer	1:Ply, 2:Frost, 4:Ice, 5:Cure Poison, 9:Tundra, 13:Restore, 16:Ply Well, 17:Ice Horn, 24:Glacier, 30:Break, 34:Pure Ply, 42:Ice Missile
+Scribe	\N
+Cleric	8:Wish, 22:Wish Well, 46:Pure Wish
+Paragon	\N
+Angel	\N
+Flame User	1:Flare, 5:Fume, 6:Flare Wall, 7:Beam, 10:Impair, 18:Flare Storm, 21:Cycle Beam, 23:Debilitate, 26:Serpent Fume, 41:Searing Beam, 47:Dragon Fume
+Witch	\N
+Hex	9:Aura, 16:Healing Aura, 33:Cool Aura
+Fire Master	\N
+Justice	\N
+Mariner	1:Frost, 2:Ply, 4:Cool, 5:Cure Poison, 8:Tundra, 12:Diamond Dust, 13:Restore, 17:Ply Well, 21:Supercool, 24:Glacier, 30:Break, 35:Pure Ply, 48:Megacool
+Privateer	6:Avoid
+Commander	\N
+Captain	[Diamond Dust:Diamond Berg]
+Admiral	\N
+Swordsman (E)	4:Thorn, 5:Cure Poison, 11:Cutting Edge, 13:Restore, 14:Briar, 19:Revive, 30:Break, 36:Nettle
+Defender (E)	1:Ply, 6:Avoid, 16:Ply Well, 34:Pure Ply
+Cavalier (E)	8:Wish, 22:Wish Well, 46:Pure Wish
+Guardian	[Cutting Edge:Plume Edge]
+Protector	\N
+Swordsman (F)	2:Blast, 3:Guard, 5:Cure Poison, 10:Mad Blast, 11:Cutting Edge, 13:Restore, 15:Protect, 28:Fiery Blast, 30:Break
+Defender (F)	1:Ply, 6:Avoid. 16:Ply Well, 34:Pure Ply
+Cavalier (F)	8:Wish, 22:Wish Well, 46:Pure Wish
+Luminier	[Cutting Edge:Plume Edge]
+Radiant	\N
+Dragoon	1:Ply, 2:Blast, 4:Thorn, 5:Cure Poison, 6:Avoid, 8:Wish, 10:Mad Blast, 11:Cutting Edge, 13:Restore, 16:Ply Well, 17:Briar, 22:Wish Well, 27:Fiery Blast, 34:Pure Ply, 36:Nettle, 46:Pure Wish
+Templar	[Cutting Edge:Plume Edge]
+Paladin	\N
+Apprentice	1:Delude, 6:Gaia, 9:Weaken, 11:Astral Blast, 14:Sleep, 17:Haunt, 20:Curse, 24:Mother Gaia, 25:Enfeeble, 31:Drain, 39:Psy Drain, 54:Grand Gaia
+Illusionist (E)	\N
+Enchanter (E)	5:Impact, 6:Ward, 21:High Impact, 22:Resist
+Conjurer (E)	[Astral Blast:Thunder Mine]
+War Adept (E)	\N
+Page	1:Delude, 6:Ward, 8:Volcano, 9:Weaken, 11:Astral Blast, 14:Sleep, 22:Resist, 24:Eruption, 25:Enfeeble, 31:Drain, 39:Psy Drain, 48:Pyroclasm
+Illusionist (F)	\N
+Enchanter (F)	3:Guard, 5:Impact, 15:Protect, 21:High Impact
+Conjurer (F)	[Astral Blast:Thunder Mine]
+War Adept (F)	\N
+Ninja	1:Gale, 4:Punji, 6:Fire Bomb, 7:Mist, 8:Thunderclap, 12:Death Plunge, 15:Punji Trap, 16:Cluster Bomb, 18:Typhoon, 21:Shuriken, 26:Thunderbolt, 31:Annihilation, 36:Punji Strike, 40:Carpet Bomb, 44:Hurricane, 50:Thunderhead
+Disciple	[Death Plunge:Death Leap]
+Master	\N
+Seer (W)	1:Cure, 2:Froth, 3:Growth, 5:Cure Poison, 10:Cure Well, 12:Mad Growth, 13:Restore, 14:Froth Sphere, 26:Potent Cure, 29:Wild Growth, 30:Break, 40:Froth Spiral
+Diviner (W)	\N
+Shaman (W)	8:Wish, 19:Revive, 22:Wish Well, 46:Pure Wish
+Druid (W)	\N
+Oracle (W)	\N
+Seer (A)	1:Cure, 2:Bolt, 3:Growth, 6:Flash Bolt, 10:Cure Well, 12:Mad Growth, 18:Bind, 22:Blue Bolt, 26:Potent Cure, 29:Wild Growth, 31:Drain, 39:Psy Drain
+Diviner (A)	\N
+Shaman (A)	7:Ward, 19:Revive, 23:Resist
+Druid (A)	\N
+Oracle (A)	\N
+Medium	1:Bolt, 2:Froth, 3:Cure, 6:Flash Bolt, 10:Cure Well, 14:Froth Sphere, 17:Haunt, 19:Revive, 20:Curse, 22:Blue Bolt, 26:Potent Cure, 29:Condemn, 31:Drain, 36:Psy Drain, 40:Froth Spiral
+Conjurer (D)	\N
+Dark Mage (D)	\N
+Pilgrim (W)	1:Douse, 5:Cure Poison, 6:Prism, 12:Drench, 13:Restore, 20:Hail Prism, 30:Deluge, 34:Break, 52:Freeze Prism
+Wanderer (W)	\N
+Ascetic (W)	8:Volcano, 9:Wish, 22:Eruption, 24:Wish Well, 46:Pure Wish, 48:Pyroclasm
+Water Monk	\N
+Guru (W)	\N
+Pilgrim (A)	1:Slash, 9:Plasma, 10:Wind Slash, 18:Bind, 26:Shine Plasma, 30:Sonic Slash, 33:Drain, 41:Psy Drain, 50:Spark Plasma
+Wanderer (A)	\N
+Ascetic (A)	6:Ward, 8:Volcano, 22:Eruption, 24:Resist, 48:Pyroclasm
+Fire Monk	\N
+Guru (A)	\N
+Ranger	1:Slash, 2:Douse, 6:Ward, 8:Volcano, 10:Wind Slash, 12:Drench, 18:Bind, 22:Eruption, 24:Resist, 30:Sonic Slash, 30:Deluge, 33:Drain, 34:Break, 41:Psy Drain, 48:Pyroclasm
+Bard	\N
+Warlock	\N
+Brute	1:Growth, 6:Blast(Nova), 12:Mad Growth, 13:Planet Diver, 16:Nova, 17:Haunt, 24:Curse, 28:Wild Growth, 29:Condemn, 40:Supernova
+Ruffian	\N
+Savage	7:Spire, 9:Impair, 19:Revive, 20:Clay Spire, 23:Debilitate, 42:Stone Spire
+Barbarian	\N
+Berserker	[Planet Diver:Planetary]
+Chaos Lord	\N
+Samurai	3:Guardian, 5:Demon Spear, 6:Rockfall, 8:Lava Shower, 10:Magic Shell, 12:Dragon Cloud, 15:Protector, 18:Demon Night, 21:Angel Spear, 24:Rockslide, 24:Molten Bath, 27:Magic Shield, 33:Helm Splitter, 40:Quick Strike, 48:Magma Storm, 54:Avalanche
+Ronin	[Dragon Cloud:Epicenter], [Demon Night:Thorny Grave], [Helm Splitter:Skull Splitter]
+Hermit	1:Impact, 6:Prism, 8:Plasma, 18:Bind, 21:High Impact, 22:Hail Prism, 26:Shine Plasma, 31:Drain, 30:Break, 39:Psy Drain, 50:Spark Plasma, 52:Freeze Prism
+Elder	\N
+Scholar	12:Wish, 24:Wish Well, 46:Pure Wish
+Savant	\N
+Sage	\N
+Wizard	\N
+White Mage	1:Cure Poison, 6:Prism, 8:Plasma, 9:Ward, 11:Dull, 12:Wish, 13:Restore, 17:Revive, 22:Hail Prism, 24:Wish Well, 26:Shine Plasma, 31:Resist, 37:Blunt, 46:Spark Plasma, 46:Pure Wish, 52:Freeze Prism
+Pure Mage	\N
+Pierrot	3:Baffle Card, 5:Juggle, 6:Avoid, 8:Sword Card, 10:Sabre Dance, 13:Flame Card, 15:Sleep Card, 17:Heat Juggle, 22:Fire Breath, 25:Thunder Card, 27:Death Card, 33:Bramble Card, 37:Fiery Juggle, 46:Frost Card
+Harlequin	\N
+Punchinello	29:Backstab 
+Acrobat	\N
+Tamer	1:Wild Wolf, 5:Cure Poison, 6:Impact, 10:Whiplash, 10:Salamander, 13:Restore, 20:Emu, 22:High Impact, 45:Roc
+Trainer	[Wild Wolf:Orc], [Salamander:Cerberus], [Emu:Harpy], [Roc:Wyvern], 7:Pixie, 32:Grand Golem
+Beastkeeper	[Orc:Dinox], [Pixie:Faery], [Cerberus:Chimera], [Harpy:Gryphon], [Grand Golem:Blue Dragon], [Wyvern:Living Armor], 15:Elder Wood, 28:Lich
+Beast Lord	[Dinox:Troll], [Faery:Weird Nymph], [Chimera:Macetail], [Elder Wood:Estre Wood], [Gryphon:Minotaur], [Lich:Phoenix], [Blue Dragon:Fire Dragon], [Living Armor:Ghost Soldier], 24:Succubus, 38:Manticore
+Dark Mage (I)	1:Call Zombie, 9:Raging Heat, 17:Haunt, 19:Revive, 20:Fire Puppet, 22:Fiery Abyss, 24:Curse, 29:Condemn, 31:Drain, 33:Poison Flow, 39:Psy Drain, 53:Dire Inferno
+Crypt Lord	\N
+Necrolyte	26:Call Demon
+Necromage	47:Call Dullahan
