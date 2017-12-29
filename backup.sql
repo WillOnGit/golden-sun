@@ -266,6 +266,27 @@ INSERT INTO `goal_pp` VALUES ('Isaac',20,80,130,170,210,250),('Garet',18,76,124,
 UNLOCK TABLES;
 
 --
+-- Table structure for table `item`
+--
+
+DROP TABLE IF EXISTS `item`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `item` (
+  `name` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `item`
+--
+
+LOCK TABLES `item` WRITE;
+/*!40000 ALTER TABLE `item` DISABLE KEYS */;
+/*!40000 ALTER TABLE `item` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `monster`
 --
 
@@ -346,7 +367,21 @@ DROP TABLE IF EXISTS `weapon`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `weapon` (
-  `name` varchar(20) DEFAULT NULL
+  `id` int(11) NOT NULL,
+  `name` varchar(20) DEFAULT NULL,
+  `game` tinyint(1) DEFAULT NULL,
+  `buy` int(11) DEFAULT NULL,
+  `sell` int(11) DEFAULT NULL,
+  `type` varchar(11) DEFAULT NULL,
+  `cursed` tinyint(1) DEFAULT NULL,
+  `ATT` int(11) DEFAULT NULL,
+  `unleash` varchar(20) DEFAULT NULL,
+  `unleashrate` decimal(3,2) DEFAULT NULL,
+  `unleasheffect` varchar(50) DEFAULT NULL,
+  `useeffect` varchar(20) DEFAULT NULL,
+  `buffs` varchar(20) DEFAULT NULL,
+  `attacktype` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -356,6 +391,7 @@ CREATE TABLE `weapon` (
 
 LOCK TABLES `weapon` WRITE;
 /*!40000 ALTER TABLE `weapon` DISABLE KEYS */;
+INSERT INTO `weapon` VALUES (1,'Long Sword',1,200,150,'long blade',0,14,NULL,NULL,NULL,NULL,NULL,NULL),(2,'Broad Sword',1,1000,750,'long blade',0,40,NULL,NULL,NULL,NULL,NULL,NULL),(3,'Claymore',1,4000,3000,'long blade',0,70,NULL,NULL,NULL,NULL,NULL,NULL),(4,'Great Sword',1,7000,5250,'long blade',0,90,NULL,NULL,NULL,NULL,NULL,NULL),(5,'Shamshir',1,10000,7500,'long blade',0,99,'Acid Bath',0.35,NULL,NULL,NULL,NULL),(6,'Silver Blade',1,12000,9000,'long blade',0,108,'Aqua Sock',0.35,NULL,NULL,NULL,NULL),(7,'Fire Brand',1,23400,17550,'long blade',0,176,'Purgatory',0.35,NULL,NULL,NULL,NULL),(8,'Arctic Blade',1,2600,1950,'long blade',0,55,'Blizzard',0.35,NULL,NULL,NULL,NULL),(9,'Gaia Blade',1,17000,12750,'long blade',0,135,'Titan Sword',0.35,NULL,NULL,NULL,NULL),(10,'Sol Blade',1,31200,23400,'long blade',0,200,'Meggido',0.35,NULL,NULL,NULL,NULL),(11,'Muramasa',1,13600,10200,'long blade',1,126,'Demon Fire',0.35,NULL,NULL,NULL,NULL),(15,'Machete',1,30,22,'light blade',0,6,NULL,NULL,NULL,NULL,NULL,NULL),(16,'Short Sword',1,120,90,'light blade',0,8,NULL,NULL,NULL,NULL,NULL,NULL),(17,'Hunter\'s Sword',1,520,390,'light blade',0,28,NULL,NULL,NULL,NULL,NULL,NULL),(18,'Battle Rapier',1,2900,2175,'light blade',0,58,NULL,NULL,NULL,NULL,NULL,NULL),(19,'Master Rapier',1,6800,5100,'light blade',0,86,NULL,NULL,NULL,NULL,NULL,NULL),(20,'Ninja Blade',1,8800,6600,'light blade',0,94,'Cyclone Attack',0.35,NULL,NULL,NULL,NULL),(21,'Swift Sword',1,9400,7050,'light blade',0,104,'Sonic Smash',0.35,NULL,NULL,NULL,NULL),(22,'Elven Rapier',1,2200,1650,'light blade',0,44,'Vorpal Slash',0.35,NULL,NULL,NULL,NULL),(23,'Assassin Blade',1,7800,5850,'light blade',0,90,'Mortal Danger',0.35,NULL,NULL,NULL,NULL),(24,'Mystery Blade',1,6400,4800,'light blade',0,84,'Life Nourish',0.35,NULL,NULL,NULL,NULL),(25,'Kikuichimonji',1,13400,10050,'light blade',0,128,'Asura',0.35,NULL,NULL,NULL,NULL),(26,'Masamune',1,16400,12300,'light blade',0,161,'Rising Dragon',0.35,NULL,NULL,NULL,NULL),(27,'Bandit\'s Sword',1,700,525,'light blade',0,12,'Rapid Smash',0.35,NULL,NULL,NULL,NULL),(31,'Battle Axe',1,280,210,'axe',0,24,NULL,NULL,NULL,NULL,NULL,NULL),(32,'Broad Axe',1,1400,1050,'axe',0,50,NULL,NULL,NULL,NULL,NULL,NULL),(33,'Great Axe',1,5200,3900,'axe',0,80,NULL,NULL,NULL,NULL,NULL,NULL),(34,'Dragon Axe',1,10300,7725,'axe',0,100,'Heat Mirage',0.35,NULL,NULL,NULL,NULL),(35,'Giant Axe',1,14000,10500,'axe',0,114,'Meltdown',0.35,NULL,NULL,NULL,NULL),(36,'Vulcan Axe',1,4600,3450,'axe',0,76,'Barrage',0.35,NULL,NULL,NULL,NULL),(37,'Burning Axe',1,7500,5625,'axe',0,84,'Broil',0.35,NULL,NULL,NULL,NULL),(38,'Demon Axe',1,16000,12000,'axe',1,132,'Poison Cloud',0.35,NULL,NULL,NULL,NULL),(43,'Mace',1,80,60,'mace',0,6,NULL,NULL,NULL,NULL,NULL,NULL),(44,'Heavy Mace',1,500,375,'mace',0,26,NULL,NULL,NULL,NULL,NULL,NULL),(45,'Battle Mace',1,2600,1950,'mace',0,56,NULL,NULL,NULL,NULL,NULL,NULL),(46,'War Mace',1,6200,4650,'mace',0,84,NULL,NULL,NULL,NULL,NULL,NULL),(47,'Righteous Mace',1,8400,6300,'mace',0,112,'Blinding Smog',0.35,NULL,NULL,NULL,NULL),(48,'Grievous Mace',1,7000,5250,'mace',0,88,'Terra Strike',0.35,NULL,NULL,NULL,NULL),(49,'Blessed Mace',1,14500,10875,'mace',0,126,NULL,NULL,NULL,NULL,NULL,NULL),(50,'Wicked Mace',1,13800,10350,'mace',1,130,'Poison Death',0.35,NULL,NULL,NULL,NULL),(55,'Wooden Stick',1,40,30,'staff',0,4,NULL,NULL,NULL,NULL,NULL,NULL),(56,'Magic Rod',1,380,285,'staff',0,16,'Murk',0.35,NULL,NULL,NULL,NULL),(57,'Witch\'s Wand',1,860,645,'staff',0,32,'Stun Voltage',0.35,NULL,NULL,NULL,NULL),(58,'Blessed Ankh',1,1600,1200,'staff',0,46,'Psyphon Seal',0.35,NULL,NULL,NULL,NULL),(59,'Psynergy Rod',1,3800,2850,'staff',0,64,'Psy Leech',0.35,NULL,NULL,NULL,NULL),(60,'Frost Wand',1,5400,4050,'staff',0,76,'Frost Bite',0.35,NULL,NULL,NULL,NULL),(61,'Angelic Ankh',1,6400,4800,'staff',0,83,'Life Leech',0.35,NULL,NULL,NULL,NULL),(62,'Demonic Staff',1,10000,7500,'staff',1,92,'Bad Omen',0.35,NULL,NULL,NULL,NULL),(63,'Crystal Rod',1,13400,10050,'staff',0,106,'Drown',0.35,NULL,NULL,NULL,NULL),(64,'Zodiac Wand',1,11400,8550,'staff',0,102,'Shining Star',0.35,NULL,NULL,NULL,NULL),(65,'Shaman\'s Rod',1,NULL,NULL,'staff',0,10,NULL,NULL,NULL,NULL,NULL,NULL),(272,'Huge Sword',2,14000,10500,'long blade',0,155,'Heavy Divide',0.35,NULL,NULL,NULL,NULL),(273,'Mythril Blade',2,14600,10950,'long blade',0,160,'Lethe Albion',0.35,NULL,NULL,NULL,NULL),(274,'Levatine',2,19700,14775,'long blade',0,173,'Radient Fire',0.35,NULL,NULL,NULL,NULL),(275,'Darksword',2,24200,18150,'long blade',1,210,'Acheron\'s Grief',0.35,NULL,NULL,NULL,NULL),(276,'Excalibur',2,29200,21900,'long blade',0,180,'Legend',0.35,NULL,NULL,NULL,NULL),(277,'Robber\'s Blade',2,7600,5700,'long blade',0,101,'Shred',0.35,NULL,NULL,NULL,NULL),(278,'Soul Brand',2,11600,8700,'long blade',0,141,'Soul Shatter',0.35,NULL,NULL,NULL,NULL),(279,'Storm Brand',2,3900,2925,'long blade',0,60,'Hurricane',0.35,NULL,NULL,NULL,NULL),(280,'Hestia Blade',2,12900,9675,'long blade',0,145,'Crucible Fire',0.35,NULL,NULL,NULL,NULL),(281,'Lightning Sword',2,11400,8550,'long blade',0,134,'Flash Edge',0.35,NULL,NULL,NULL,NULL),(282,'Rune Blade',2,15000,11250,'long blade',0,162,'Void Beam',0.35,NULL,NULL,NULL,NULL),(283,'Cloud Brand',2,11800,8850,'long blade',0,130,'Raiden\'s Wrath',0.35,NULL,NULL,NULL,NULL),(285,'Sylph Rapier',2,10100,7575,'light blade',0,124,'Mad Zephyr',0.35,NULL,NULL,NULL,NULL),(286,'Burning Sword',2,14600,10950,'light blade',0,157,'Blaze Rush',0.35,NULL,NULL,NULL,NULL),(287,'Pirate\'s Sword',2,2000,1500,'light blade',0,34,'Dreamtide',0.35,NULL,NULL,NULL,NULL),(288,'Corsair\'s Edge',2,6300,4725,'light blade',0,90,'Lunar Slash',0.35,NULL,NULL,NULL,NULL),(289,'Pirate\'s Sabre',2,10600,7950,'light blade',0,136,'Scorpionfish',0.35,NULL,NULL,NULL,NULL),(290,'Hypnos\' Sword',2,2900,2175,'light blade',0,49,'Moon Air',0.35,NULL,NULL,NULL,NULL),(291,'Mist Sabre',2,8600,6450,'light blade',0,110,'Searing Fog',0.35,NULL,NULL,NULL,NULL),(292,'Phaeton\'s Blade',2,13600,10200,'light blade',0,151,'Light Surge',0.35,NULL,NULL,NULL,NULL),(293,'Tisiphone Edge',2,23000,17250,'light blade',0,178,'Vengeance',0.35,NULL,NULL,NULL,NULL),(295,'Appolo\'s Axe',2,15200,11400,'axe',0,158,'Flare Burst',0.35,NULL,NULL,NULL,NULL),(296,'Gaia\'s Axe',2,16400,12300,'axe',0,163,'Mother Earth',0.35,NULL,NULL,NULL,NULL),(297,'Stellar Axe',2,19700,14775,'axe',0,171,'Supernova',0.35,NULL,NULL,NULL,NULL),(298,'Captain\'s Axe',2,6800,5100,'axe',0,95,NULL,NULL,NULL,NULL,NULL,NULL),(299,'Viking Axe',2,11000,8250,'axe',0,137,'Stun Bolt',0.35,NULL,NULL,NULL,NULL),(300,'Disk Axe',2,4700,3525,'axe',0,76,'Power Drive',0.35,NULL,NULL,NULL,NULL),(301,'Themis\' Axe',2,1900,1425,'axe',0,30,'Stone Justice',0.35,NULL,NULL,NULL,NULL),(302,'Mighty Axe',2,11900,8925,'axe',0,142,'Heat Shatter',0.35,NULL,NULL,NULL,NULL),(303,'Tartarus Axe',2,10800,8100,'axe',0,127,'Vein Tap',0.35,NULL,NULL,NULL,NULL),(305,'Comet Mace',2,8000,6000,'mace',0,105,'Ice Crush',0.35,NULL,NULL,NULL,NULL),(306,'Tungsten Mace',2,14700,11025,'mace',0,159,'Hammersphere',0.35,NULL,NULL,NULL,NULL),(307,'Demon Mace',2,9200,6900,'mace',0,115,'Evil Eye',0.35,NULL,NULL,NULL,NULL),(308,'Hagbone Mace',2,8400,6300,'mace',0,108,'Wyrd Curse',0.35,NULL,NULL,NULL,NULL),(309,'Blow Mace',2,2800,2100,'mace',0,45,'Boost Hack',0.35,NULL,NULL,NULL,NULL),(310,'Rising Mace',2,13900,10425,'mace',0,152,'High Vitals',0.35,NULL,NULL,NULL,NULL),(311,'Thanatos Mace',2,10400,7800,'mace',0,125,'Heartbreak',0.35,NULL,NULL,NULL,NULL),(313,'Cloud Wand',2,7000,5250,'staff',0,98,'Stun Cloud',0.35,NULL,NULL,NULL,NULL),(314,'Salamander Rod',2,14300,10725,'staff',0,156,'Fire Dance',0.35,NULL,NULL,NULL,NULL),(315,'Nebula Wand',2,15200,11400,'staff',0,165,'Reverse Star',0.35,NULL,NULL,NULL,NULL),(316,'Dracomace',2,10700,8025,'staff',0,128,'Aging Gas',0.35,NULL,NULL,NULL,NULL),(317,'Glower Staff',2,10100,7575,'staff',0,126,'Flash Force',0.35,NULL,NULL,NULL,NULL),(318,'Goblin\'s Rod',2,9800,7350,'staff',0,134,'Sargasso',0.35,NULL,NULL,NULL,NULL),(319,'Meditation Rod',2,13400,10050,'staff',0,150,'Nirvana',0.35,NULL,NULL,NULL,NULL),(320,'Fireman\'s Rod',2,8200,6150,'staff',0,130,NULL,NULL,NULL,NULL,NULL,NULL),(321,'Atropos\' Rod',2,18900,14175,'staff',0,169,'Life Shear',0.35,NULL,NULL,NULL,NULL),(322,'Lachesis\' Rule',2,21700,16275,'staff',0,177,'Apocalypse',0.35,NULL,NULL,NULL,NULL),(323,'Clotho\'s Distaff',2,17200,12900,'staff',0,168,NULL,NULL,NULL,NULL,NULL,NULL),(324,'Staff of Anubis',2,5500,4125,'staff',0,83,'Sarcophagus',0.35,NULL,NULL,NULL,NULL),(417,'Rusty Sword',2,320,240,'rusty',0,9,NULL,NULL,NULL,NULL,NULL,NULL),(418,'Rusty Sword',2,370,277,'rusty',0,10,NULL,NULL,NULL,NULL,NULL,NULL),(419,'Rusty Sword',2,520,390,'rusty',0,13,NULL,NULL,NULL,NULL,NULL,NULL),(420,'Rusty Sword',2,580,435,'rusty',0,14,NULL,NULL,NULL,NULL,NULL,NULL),(421,'Rusty Axe',2,340,255,'rusty',0,10,NULL,NULL,NULL,NULL,NULL,NULL),(422,'Rusty Axe',2,550,412,'rusty',0,14,NULL,NULL,NULL,NULL,NULL,NULL),(423,'Rusty Mace',2,460,345,'rusty',0,12,NULL,NULL,NULL,NULL,NULL,NULL),(424,'Rusty Mace',2,420,315,'rusty',0,11,NULL,NULL,NULL,NULL,NULL,NULL),(425,'Rusty Staff',2,530,397,'rusty',0,13,NULL,NULL,NULL,NULL,NULL,NULL),(426,'Rusty Staff',2,500,375,'rusty',0,12,NULL,NULL,NULL,NULL,NULL,NULL),(427,'Rusty Staff',2,480,360,'rusty',0,11,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `weapon` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -368,4 +404,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-12-27 23:06:24
+-- Dump completed on 2017-12-29 17:36:41

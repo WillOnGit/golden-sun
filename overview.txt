@@ -1,7 +1,8 @@
 OVERVIEW
 
-ITEMS
+ITEMS - NEXT!
 	WEAPONS
+		DONE apart from unleash effects + boosts + use effects
 	ARMOUR (by type?)
 	VALUE
 	FORGING/CRAFTING - document
@@ -21,6 +22,7 @@ CHARACTERS
 
 CLASSES
 	STAT EFFECTS, PSYNERGY
+	DONE,         DONE
 
 PSYNERGY
 	LEVEL, COST, EFFECT
