@@ -1,29 +1,24 @@
 'Physics'
 
+=====
+STATS
+=====
+
 The stat you actually see is worked out in the following manner:
 (Base Stat + Djinni Bonuses + Equip Bonus) * Class Bonus
 
 
+(Character goals DONE + Djinni bonuses DONE + Item bonuses PARTIALLY DONE) * Class Bonus DONE
 
-(Character goals DONE + Djinni bonuses DONE + Item bonuses NOT DONE) * Class Bonus NOT DONE
-
-
+================
+ELEMENTS/CLASSES
+================
 
 All the characters start off with 5 levels in a particular element, and 0
-levels in all others.  The characters and their respective elements are:
+levels in all others. This can be found as the element in the database.
 
-Name     Element
-Felix    Earth
-Piers    Water
-Jenna    Fire
-Sheba    Wind
-
-Isaac    Earth
-Mia      Water
-Garet    Fire
-Ivan     Wind
-
-
+Each level in a particular element grants you an extra +5 Power and +5 Resist to that element.
+You gain an additional Element Level for each Djinni you equip of that element.
 
 In addition to having starting elemental levels, each character has the
 following base Power and Resist for each element, depending on their own
@@ -52,3 +47,51 @@ Wind      Fire     Earth     Water
 
 Primary dominates Neutral dominates Weakness dominates Affinity
 
+At any time, you will have two dominant elements: First Dominant and Second
+Dominant. The element in which you have the highest Elemental Level is your
+First Dominant, and your second highest is your Second Dominant.  Ties are,
+of course, worked out by the above Dominance order.
+
+ 1. If you have only Primary Djinn set, you will receive a class from the
+      Basic Element Classes.
+  a. Jenna and Piers are exceptions, and instead receive their class from the
+       Lost Age New Classes table.
+ 2. If the above doesn't hold (you have at least one non-Primary Djinni set)
+      then we check if your Affinity Element is either your First or Second
+      Dominant.  If it is, you will receive a class from the Earth/Fire Table
+      or the Wind/Water Table, depending on which group your Affinity is
+      from.
+ 3. Otherwise, we pick from the table aligned with your Secondary Dominant.
+      It is impossible for any character to be able to select a class from
+      the table aligned solely with their Affinity Element, as seen by the
+      rules above.
+
+There is one final exception: if you have an Class Item equipped, then
+you will be forced into the relevant class from the Class Item Table.
+Mysterious Card pushes you into the Pierrot group, Trainer's Whip into the
+Tamer group, and Tomegathericon into the Dark Mage (I) group.
+
+========
+PSYNERGY
+========
+
+INHERENT PSYNERGY
+
+Felix            Retreat, Move, Sand (Learned in Gaia Rock)
+Piers            Douse, Parch (Learned in Aqua Rock)
+Jenna            Blaze (Learned in Magma Rock)
+Sheba            Mind Read, Reveal (Learned in Air's Rock)
+Isaac            Retreat, Move
+Mia              ---
+Garet            Move
+Ivan             Mind Read, Reveal
+
+Psynergy is inherited from lower ranks of the same class family. Therefore, to
+find out which psynergy a character has at a given time:
+
+1. Find the lowest rank of the current class family for that character
+2. Use the 'upgrades' (name might change) column of DB to check psynergy
+     a. Each part of the string looks like 1:Cure ==> if character level >=1, it knows cure.
+     b. Do this for each part of the string
+3. Repeatedly process the 'upgrades' column for other class ranks up to the current class rank
+     a. The [name:newname] indicates that psynergy 'name' is upgrade to psynergy 'newname'
