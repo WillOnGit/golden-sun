@@ -95,3 +95,72 @@ find out which psynergy a character has at a given time:
      b. Do this for each part of the string
 3. Repeatedly process the 'upgrades' column for other class ranks up to the current class rank
      a. The [name:newname] indicates that psynergy 'name' is upgrade to psynergy 'newname'
+
+=======================
+== DAMAGE OF ATTACKS ==
+=======================
+
+Relative Attack:
+    Relative Attack = (User's Attack - Target's Defense).
+    If (Relative Attack < 0), Relative Attack = 0.
+
+Relative Power: 
+    Relative Power = (User's Power - Target's Resist).
+    If (Relative Power < -200), Relative Power = -200.
+    If (Relative Power > 200), Relative Power = 200.
+
+Basic Physical Attack:
+    Base Damage = Relative Attack
+
+Critical Hits:
+    Damage = [Base Damage * 1.25] + [Target's Level / 5] + 6
+
+Special Physical Attacks:
+    Damage = [Base Damage * Mult Mod] + Add Mod
+    If Elemental, Damage = [Damage * (1 + Relative Power / 400)]
+
+Basic Psynergy Attacks:
+    Psynergy has own Base Damage
+    Damage = [Psynergy Base Damage * (1 + Relative Power / 200)]
+
+Curative Psynergy:
+    Psynergy has own Base Healing
+    Healing = [Psynergy Base Healing * Caster's Power / 100]
+
+Area Reduction:
+    Basic Area Psynergy is reduced by the ratio:
+      100%, 80%, 60%, 40%, 20%, 10%.
+    Diminishing Area Psynergy is reduced by the ratio:
+      100%, 50%, 30%, 10%, 10%, 10%.
+    Summons are reduced by the ratio:
+      100%, 70%, 40%, 30%, 20%, 10%.
+    Physical Attacks are never reduced.
+    A(ll) Target Psynergy is never reduced.
+    Abilities that don't do normal damage are never reduced.
+
+Random Damage:
+    All attacks with Random Damage have a number between 0 to 3 added to them
+
+Status Damage:
+    Poison deals 10% of Max HP in damage per turn
+    Deadly Poison deals 20% of Max HP in damage per turn
+    Haunt causes you to randomly take 25% of the damage you dealt an enemy
+      whenever you attack
+
+
+
+
+IMPORTANT NOTE:
+  Some fractions in this game are not used exactly as listed.  Instead,
+Lost Age converts these fractions into one that has a denominator of 256.
+As an example, 78/200 would be converted in this manner to:
+
+       [(78 * 256) / 200]
+     = [19968 / 200]
+     = [99.84]
+     =  99
+
+Thus becoming 99/256.  For most things, this difference is not noticable,
+especially after random damage.  However, for attacks like Summons against
+high HP enemies, this small rounding error can become noticable if you're
+bothering to try and estimate what you should be getting.
