@@ -1,6 +1,3 @@
-
--------------------------------------------------------------------------------
-
 -O. Items
 
 180 / やくそう / Medicinal Herb / Herb
@@ -86,8 +83,6 @@ Sell: 375 coins
 Boosts max Luck
 Buy: 500 coins
 Sell: 375 coins
-
--------------------------------------------------------------------------------
 
 -P. Psynergy Items
 
@@ -175,8 +170,6 @@ Cannot be sold or bought.
 Teaches 'Teleport'
 US - Teaches 'Teleport'
 Cannot be sold or bought.
-
--------------------------------------------------------------------------------
 
 -Q. Other Items
 
@@ -284,9 +277,6 @@ Cannot be sold or bought.
 247 / マーズスター / Mars Star / Mars Star (listed as 223 in GS)
 Cannot be sold or bought.
 
--------------------------------------------------------------------------------
-
-
 -R3. Artifacts (Rings)
 
 262 / エナジストリング / Energist Ring / Adept Ring
@@ -330,21 +320,11 @@ Removes the effects of Curse
 Buy: 6400 coins
 Sell: 4800 coins
 
--------------------------------------------------------------------------------
-
-
--------------------------------------------------------------------------------
-
 -2F. TLA Special
 
 328 / ３つまたのヤリ / 3-Pronged Spear / Trident
 Mercury Resist +20
 Cannot be sold or bought.
-
--------------------------------------------------------------------------------
-
-
--------------------------------------------------------------------------------
 
 -2P3. TLA Atifacts (Rings)
 
@@ -390,13 +370,6 @@ It might break if used in battle
 Buy: 4000 coins
 Sell: 3000 coins
 
--------------------------------------------------------------------------------
-
--2Q. TLA Rusty Items
-
-
--------------------------------------------------------------------------------
-
 -2R. TLA Blacksmith Items
 
 429 / ティアストーン / Tear Stone / Tear Stone
@@ -435,8 +408,6 @@ Sell: 2250 coins
 Buy: 4000 coins
 Sell: 3000 coins
 
--------------------------------------------------------------------------------
-
 -2S. TLA Trident Pieces
 
 439 / みぎのほこさき / Right Point of the Spear / Right Prong
@@ -447,8 +418,6 @@ Cannot be sold or bought.
 
 441 / まんなかのほこさき / Middle Point of the Spear / Center Prong
 Cannot be sold or bought.
-
--------------------------------------------------------------------------------
 
 -2T. TLA Class Items
 
@@ -463,8 +432,6 @@ Sell: 499 coins
 445 / ネクロノミコン / Necronomicon / Tomegathericon
 Buy: 999 coins
 Sell: 749 coins
-
--------------------------------------------------------------------------------
 
 -2U. TLA Other Items
 

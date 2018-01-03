@@ -164,3 +164,11 @@ Thus becoming 99/256.  For most things, this difference is not noticable,
 especially after random damage.  However, for attacks like Summons against
 high HP enemies, this small rounding error can become noticable if you're
 bothering to try and estimate what you should be getting.
+
+=======
+SUMMONS
+=======
+
+Base Damage = Summon Base + [Target's Max HP * 3 * Djinn Used / 100]
+
+Exceptions exist to the HP % part, but the rule of thumb is 3% of HP per djinni.
