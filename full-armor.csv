@@ -1,0 +1,988 @@
+75,Leather Armor
+,12
+,240
+,180
+
+76,Psynergy Armor
+,21
+Maximum PP +20
+,1000
+,750
+
+77,Chain Mail
+,25
+,2000
+,1500
+
+78,Armored Shell
+,30
+,3600
+,2700
+
+79,Plate Mail
+,33
+,4400
+,3300
+
+80,Steel Armor
+,36
+,4900
+,3675
+
+81,Spirit Armor
+,32
+Venus Resist +15
+Mercury Resist +15
+Mars Resist +15
+Jupiter Resist +15
+,4000
+,3000
+
+82,Dragon Scales
+,44
+Mercury Resist +30
+Mars Resist +30
+,17000
+,12750
+
+83,Demon Mail
+,50
+Jupiter Resist -10
+,17000
+,12750
+
+84,Asura's Armor
+Attack +5
+,42
+HP recovery +8
+,15000
+,11250
+
+85,Spiked Armor
+Attack +10
+,34
+,14000
+,10500
+
+-------------------------------------------------------------------------------
+
+
+89,Cotton Shirt
+,3
+,20
+,15
+
+90,Travel Vest
+,7
+,49
+,37
+
+91,Fur Coat
+,16
+Mercury Resist +20
+,400
+,300
+
+92,Adept's Clothes
+,18
+Maximum PP +8
+,849
+,637
+
+93,Elven Shirt
+,22
+Agility x1.5
+,1700
+,1275
+
+94,Silver Vest
+,28
+,3200
+,2400
+
+95,Water Jacket
+,30
+Mercury Resist +30
+Mars Resist +20
+,3000
+,2250
+
+96,Storm Gear
+,42
+Mercury Resist +30
+Mars Resist +30
+Jupiter Resist +30
+,9800
+,7350
+
+97,Kimono
+,25
+Mars Resist +10
+Agility +10
+,2800
+,2100
+
+98,Ninja Garb
+,36
+Agility +30
+Jupiter Resist +10
+,6900
+,5175
+
+-------------------------------------------------------------------------------
+
+
+103,One-Piece Dress
+,4
+,24
+,18
+
+104,Travel Robe
+,10
+,200
+,150
+
+105,Silk Robe
+,20
+,1400
+,1050
+
+106,China Dress
+,19
+Effect - Drops enemy attack
+,1600
+,1200
+
+107,Jerkin
+,26
+,2400
+,1800
+
+108,Cocktail Dress
+,29
+Map PP +15
+,4000
+,3000
+
+109,Blessed Robe
+,36
+HP recovery +5
+,7000
+,5250
+
+110,Magical Cassock
+,39
+PP recovery +2
+,9000
+,6750
+
+111,Mysterious Robe
+,48
+HP recovery +20
+PP recovery +10
+,40
+,36500
+,27375
+
+112,Feathered Robe
+,45
+Jupiter Power +20
+Jupiter Resist +30
+Agility +30
+,14000
+,10500
+
+113,Oracle's Robe
+,43
+Mercury Resist +40
+HP recovery +10
+,13500
+,10125
+
+-------------------------------------------------------------------------------
+
+
+118,Wooden Shield
+,6
+,40
+,30
+
+119,Bronze Shield
+,14
+,500
+,375
+
+120,Iron Shield
+,20
+,1200
+,900
+
+121,Knight's Shield
+,28
+,3000
+,2250
+
+122,Mirrored Shield
+,39
+Effect - Deludes enemies
+,5200
+,3900
+
+123,Dragon Shield
+,26
+Mars Resist +30
+,2400
+,1800
+
+124,Earth Shield
+,31
+Venus Resist +20
+Effect - Restores 150HP
+,4100
+,3075
+
+-------------------------------------------------------------------------------
+
+
+127,Padded Gloves
+,2
+,10
+,7
+
+128,Leather Gloves
+,10
+,220
+,165
+
+129,Gauntlets
+,23
+,1600
+,1200
+
+130,Vambrace
+Attack +5
+,27
+,1800
+,1350
+
+131,War Gloves
+Attack +10
+,32
+,4000
+,3000
+
+132,Spirit Gloves
+,34
+Venus Power +5
+Mercury Power +5
+Mars Power +5
+Jupiter Power +5
+,5200
+,3900
+
+133,Battle Gloves
+Attack +8
+,26
+,2100
+,1575
+
+134,Aura Gloves
+,36
+Effect - Raises elemental resistance
+,6500
+,4875
+
+-------------------------------------------------------------------------------
+
+
+136,Leather Armlet
+,7
+,180
+,135
+
+137,Armlet
+,17
+,900
+,675
+
+138,Heavy Armlet
+,25
+,2000
+,1500
+
+139,Silver Armlet
+,30
+,4000
+,3000
+
+140,Spirit Armlet
+,38
+Venus Power +10
+Mercury Power +10
+Effect - Cures negative status effects
+,9000
+,6750
+
+141,Virtuous Armlet
+,35
+Mars Power +10
+Jupiter Power +10
+Effect - Restores 100HP
+,7000
+,5250
+
+142,Guardian Armlet
+,27
+Effect - Boosts Defense
+,2600
+,1950
+
+-------------------------------------------------------------------------------
+
+
+145,Open Helm
+,9
+,180
+,135
+
+146,Bronze Helm
+,14
+,600
+,450
+
+147,Iron Helm
+,20
+,1600
+,1200
+
+148,Steel Helm
+,27
+,3100
+,2325
+
+149,Silver Helm
+,30
+,3900
+,2925
+
+150,Knight's Helm
+,33
+,4600
+,3450
+
+151,Warrior's Helm
+,35
+Venus Power +10
+,10000
+,7500
+
+152,Adept's Helm
+,29
+Maximum PP x1.2
+,3700
+,2775
+
+-------------------------------------------------------------------------------
+
+
+156,Leather Cap
+,3
+,30
+,22
+
+157,Wooden Cap
+,10
+,400
+,300
+
+158,Mail Cap
+,23
+,2000
+,1500
+
+159,Jeweled Crown
+,35
+Luck +5
+,4000
+,3000
+
+160,Ninja Hood
+,28
+Agility +20
+,2800
+,2100
+
+161,Lucky Cap
+,33
+PP recovery +3
+,5200
+,3900
+
+162,Thunder Crown
+,40
+PP recovery +4
+,7500
+,5625
+
+163,Prophet's Hat
+,30
+Effect - Predicts being downed
+,4600
+,3450
+
+164,Lure Cap
+,20
+Increases random encounters
+,3000
+,2250
+
+-------------------------------------------------------------------------------
+
+
+166,Circlet
+,6
+,120
+,90
+
+167,Silver Circlet
+,16
+,1300
+,975
+
+168,Guardian Circlet
+,25
+,3400
+,2550
+
+169,Platinum Circlet
+,29
+,4200
+,3150
+
+170,Mythril Circlet
+,34
+PP recovery +3
+,7000
+,5250
+
+171,Glittering Tiara
+,27
+Effect - Prevents delusion
+,3600
+,2700
+
+
+250,Mythril Shirt
+,10
+Maximum HP +5
+,2900
+,2175
+
+251,Silk Shirt
+,6
+Luck +1
+,1800
+,1350
+
+252,Running Shirt
+,1
+Agility +15
+,400
+,300
+
+
+256,Hyper Boots
+,4
+,2400
+,1800
+
+257,Quick Boots
+,3
+Agility +20
+,2100
+,1575
+
+258,Fur Boots
+,2
+Mercury Resist +15
+,1200
+,900
+
+259,Turtle Boots
+,3
+Agility x0.5
+,600
+,450
+
+
+328,Planet Armor
+,36
+Venus Power +10
+Mercury Power +10
+Mars Power +10
+Jupiter Power +10
+,4800
+,3600
+
+329,Dragon Mail
+,44
+Mercury Resist +15
+Mars Resist +15
+,9700
+,7275
+
+330,Chronos Mail
+,47
+Maximum HP +30
+,13100
+,9825
+
+331,Stealth Armor
+,48
+Venus Resist -10
+,14000
+,10500
+
+332,Xylion Armor
+Attack +12
+,50
+,22500
+,16875
+
+333,Ixion Mail
+,26
+Mercury Resist +20
+Jupiter Resist +20
+,1300
+,975
+
+334,Phantasmal Mail
+,38
+Luck +7
+Boosts luck in battle
+,5800
+,4350
+
+335,Erebus Armor
+,43
+HP recovery +6
+,9000
+,6750
+
+336,Valkyrie Mail
+,53
+,25500
+,19125
+
+-------------------------------------------------------------------------------
+
+
+338,Faery Vest
+,38
+Restores 200 HP
+,6900
+,5175
+
+339,Mythril Clothes
+,49
+,14900
+,11175
+
+340,Full Metal Vest
+,21
+,1100
+,825
+
+341,Wild Coat
+,37
+Agility +40
+,4000
+,3000
+
+342,Floral Dress
+,38
+Can send enemies to sleep
+,6600
+,4950
+
+343,Festival Coat
+,28
+Luck +10
+,2800
+,2100
+
+344,Erinyes Tunic
+Attack +5
+,45
+,10400
+,7800
+
+345,Triton's Ward
+,47
+Mercury Power +30
+Mercury Resist +70
+,16200
+,12150
+
+-------------------------------------------------------------------------------
+
+
+347,Dragon Robe
+,42
+Mercury Resist +18
+Mars Resist +18
+,8900
+,6675
+
+348,Ardagh Robe
+,44
+Mars Power +20
+Mars Resist +40
+,9900
+,7425
+
+349,Muni Robe
+,39
+HP recovery +10
+,6300
+,4725
+
+350,Aeolian Cossack
+,46
+Jupiter Power +15
+Jupiter Resist +50
+,11400
+,8550
+
+351,Iris Robe
+,47
+Luck +15
+Mars Resist +30
+PP recovery +12
+,16600
+,12450
+
+-------------------------------------------------------------------------------
+
+
+353,Luna Shield
+,33
+Venus Resist +30
+,3900
+,2925
+
+354,Dragon Shield
+,42
+Mercury Resist +15
+Mars Resist +15
+,7400
+,5550
+
+355,Flame Shield
+,44
+Mars Resist +60
+,8600
+,6450
+
+356,Terra Shield
+Attack +5
+,48
+,11200
+,8400
+
+357,Cosmos Shield
+,49
+Venus Resist +20
+Mercury Resist +20
+Mars Resist +20
+Jupiter Resist +20
+,12200
+,9150
+
+358,Fujin Shield
+,23
+Jupiter Resist +50
+,1400
+,1050
+
+359,Aegis Shield
+,41
+,6700
+,5025
+
+-------------------------------------------------------------------------------
+
+
+361,Aerial Gloves
+,37
+Agility +30
+Jupiter Power +20
+,5400
+,4050
+
+362,Titan Gloves
+,43
+Maximum HP +30
+,8100
+,6075
+
+363,Big Bang Gloves
+,47
+Mars Power +40
+,10200
+,7650
+
+364,Crafted Gloves
+Attack +5
+,35
+,4600
+,3450
+
+365,Riot Gloves
+Attack +15
+,45
+,10400
+,7800
+
+366,Spirit Gloves
+,40
+Maximum PP +20
+,7200
+,5400
+
+-------------------------------------------------------------------------------
+
+
+368,Clear Bracelet
+,31
+Mercury Power +25
+,3500
+,2625
+
+369,Mythril Armlet
+,46
+,9700
+,7275
+
+370,Bone Armlet
+,30
+Haunts an enemy
+,3000
+,2250
+
+371,Jester's Armlet
+,39
+Maximum PP +30
+,5100
+,3825
+
+372,Leda's Armlet
+,38
+Jupiter Power +30
+,5800
+,4350
+
+-------------------------------------------------------------------------------
+
+
+374,Dragon Helm
+,42
+Mercury Resist +20
+Mars Resist +20
+,8900
+,6675
+
+375,Mythril Helm
+,44
+,11400
+,8550
+
+376,Fear Helm
+Attack +10
+,48
+,12800
+,9600
+
+377,Millenium Helm
+,45
+Maximum HP +20
+,11400
+,8550
+
+378,Viking Helm
+,30
+Mercury Resist +30
+,4000
+,3000
+
+379,Gloria Helm
+,49
+HP recovery +10
+,13800
+,10350
+
+380,Minerva Helm
+,43
+Maximum PP +20
+,8700
+,6525
+
+-------------------------------------------------------------------------------
+
+382,Floating Hat
+,34
+Luck x1.2
+Jupiter Resist +20
+,5700
+,4275
+
+383,Nurse's Cap
+,18
+Effect - Release healing power
+,1200
+,900
+
+384,Thorn Crown
+Attack +8
+,28
+,3300
+,2475
+
+385,Otafuku Mask
+,31
+A water attack on the enemy
+,3900
+,2925
+
+386,Hiotoko Mask
+,33
+A fire attack on the enemy
+,6600
+,4950
+
+387,Crown of Glory
+,40
+PP recovery +8
+,7400
+,5550
+
+388,Alastor's Hood
+,47
+Haunts the enemy
+,11800
+,8850
+
+-------------------------------------------------------------------------------
+
+
+390,Pure Circlet
+,29
+Mercury Power +20
+,3700
+,2775
+
+391,Astral Circlet
+,32
+Maximum PP +15
+,4600
+,3450
+
+392,Psychic Circlet
+,39
+PP recovery +12
+,8800
+,6600
+
+393,Demon Circlet
+,50
+,15800
+,11850
+
+394,Clarity Circlet
+,21
+Jupiter Power +15
+,1500
+,1125
+
+395,Brilliant Circlet
+,36
+Luck +10
+,6100
+,4575
+
+396,Berserker Band
+Attack +15
+,46
+,13700
+,10275
+
+-------------------------------------------------------------------------------
+
+
+398,Divine Camisole
+,10
+Luck +5
+,2700
+,2025
+
+399,Herbed Shirt
+,7
+Reduces enemy defense
+,1900
+,1425
+
+400,Golden Shirt
+,12
+Maximum HP +10
+,2400
+,1800
+
+401,Casual Shirt
+,3
+HP recovery +5
+,50
+,37
+
+-------------------------------------------------------------------------------
+
+402,Leather Boots
+,6
+,270
+,202
+
+403,Dragon Boots
+,13
+Venus Resist +10
+Mercury Resist +10
+Mars Resist +10
+,4200
+,3150
+
+404,Safety Boots
+,12
+Agility x0.7
+,700
+,525
+
+405,Knight's Greave
+,8
+Maximum HP +5
+,2700
+,2025
+
+406,Silver Greave
+,11
+Luck +4
+,3800
+,2850
+
+407,Ninja Sandals
+,5
+,2000
+,1500
+
+408,Golden Boots
+Attack +15
+,30
+,4400
+,3300
