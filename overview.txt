@@ -1,41 +1,34 @@
 OVERVIEW
 
-ITEMS - NEXT!
-	WEAPONS
-		DONE apart from unleash effects + boosts + use effects
-	ARMOUR (by type?)
-	VALUE
-	FORGING/CRAFTING - document
-	ANYTHING ELSE?
+ITEMS
+	WEAPONS - DONE
+		apart from unleash effects + boosts + use effects
+	ARMOUR - DONE
+		apart from use effects + buffs + crafting
+	MISC ITEMS - later
+		rest all in one table?
 
-DJINNI
-	STAT BOOSTS, LOCATIONS, TYPE, EFFECT
-	DONE DONE D, DONEISH D, NNNN, NNNNNN
+DJINNI - more or less done
+	done everything apart from TYPE, EFFECT?
 	Type: offensive, defensive, buff, other?
 
-SUMMONS
-	EFFECTS, ACQUIRING
+SUMMONS - DONE 
+	Still need special effects
 
-CHARACTERS
+CHARACTERS - DONE
 	BASE STATS, GOALS ETC.
-	DONE
 
-CLASSES
+CLASSES - DONE
 	STAT EFFECTS, PSYNERGY
-	DONE,         DONE
 
-PSYNERGY
+PSYNERGY - next
 	LEVEL, COST, EFFECT
 
-COMBAT MECHANICS
+COMBAT MECHANICS - after everything else is ready
 	STATS, TURNS, ELEMENT POWER/RESISTANCE
 
-LOCATIONS - OWN TABLE OR QUERY?
-
-MONSTERS
+MONSTERS - NOT DONE
 	STATS, LOCATIONS, DROPS, EXP
 
-BOSSES
-	STATS, LOCATIONS, DROPS, EXP
-
-LEVELS/EXPERIENCE
+BOSSES - NOT DONE
+	same as monsters - own table or field?
