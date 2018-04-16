@@ -1,0 +1,600 @@
+*****************************
+*     Table of Contents     *
+*****************************
+
+I.    About this Guide
+II.   History
+III.  GS:TLA Djinn Guide, listed in order you get them
+IV.   GS:TLA Djinn Guide, listed by type
+        A. Venus
+        B. Mars
+        C. Jupiter
+        D. Mercury
+V.    Djinn you get without transferring data from Golden Sun
+VI.   Thanks
+VII.  Copyright
+
+
+****************************
+*     About this Guide     *
+****************************
+
+This guide is to help people find the tricky djinn they missed.
+Listed here are all 44 djinn you'll find in Golden Sun: The Lost Age.
+If you transferred data from Golden Sun, you can get 72 djinn in total.
+I also listed their Japanese names since some walkthroughs are still using
+them.
+
+BTW, no matter how many times you play, djinn are always at the place they
+should be. There's no way they'll appear in different places.
+Field djinn might appear a few steps from the place other people find them,
+ but at least it's still in the same forest.
+
+If you feel the description is not clear enough, or corrections are needed,
+feel free to e-mail me at shiningshizuko@hotmail.com
+
+
+*******************
+*     History     *
+*******************
+
+v.0.8 (April 14, 2003)
+v.1.0 (April 17, 2003) Added more details.
+v.1.2 (June 5, 2003) Listed in order.
+v.1.3 (Sept 19, 2003) switched Reflux and Steam around
+
+
+******************************
+*     GS:TLA Djinn Guide     *
+******************************
+
+Since most of the places can be visited in no particular order,
+ there's no such thing as a clear cut order on when you get these djinn.
+The order listed here is my suggested best order.
+
+However, the gncheckpoint should be useful.
+
+Echo (Venus #1)
+---------------
+Automatically joins when leaving Daila Village (the first village).
+
+Fog (Mercury #1)
+----------------
+Kandorean Temple.
+To get there, walk west when you come to a road fork when leaving Daila.
+Go into the cave again after you learn Lash.
+
+Breath (Jupiter #1)
+-------------------
+Shrine of the Sea God.
+Chase it around. Use the torch to block its escape route.
+
+Cannon (Mars #1)
+----------------
+Dehkan Plateau.
+To get there, walk east when you come to a road fork when leaving Daila.
+Do not walk near him or he'll pin you into the ground woth his Pound Cube.
+Find a way to fall right on top of it.
+After it dropped the Cube, equip it. Use Pound to break his escape path.
+
+Iron (Venus #2)
+---------------
+Randomly encountered in a forest near Madra. (Indra Contintent)
+Starting from Madra, walk west across a bridge.
+It's in the forest slightly south of the bridge.
+
+Blitz (Jupiter #2)
+------------------
+Yampi Desert (Osenia Continent)
+Blitz is on a cliff in the 3rd area of Yampi Desert. Look carefully!
+Don't pound all the poles into the ground.
+You need some of them to jump on to reach Blitz.
+
+Ether (Jupiter #3)
+------------------
+Garoh Village (the Werewolf town).
+After learning Reveal in Airs Rock, follow the old werewolf into the cave.
+The werewolf, Master Maha, will give you the djinn after the conversation.
+
+Sour (Mercury #2)
+-----------------
+Randomlly encountered in a triangular forest northeast of Mikasalla.
+The forest is near the mountain. 
+NOT near the Osenia Cavern.          MMMMMMMMMMMMMMM
+Like this:                           MMMMM CAVE &&&M
+                                               &&&&M
+ M= mountain                         &&&MM **     MM
+ &= forest                           &&MMM ***     M
+ *= the forest where                 &MMMM ****
+    you'll find the djinn            MMMMMMMMMMM
+
+
+Spark (Mars #2)
+---------------
+Mikasalla Village. (Osenia Continent)
+First, learn gnScoop in Yampi Desert.
+Then dig the ground where there's a sheep walking around.
+You'll find a ladder leading down.
+Go through the tunnel and you'll find Spark outside.
+
+Kindle (Mars #3)
+----------------
+Gondowan Cliff. (Between Indra Continent and Gondowan Continent.)
+To get to Gondowan Cliff, walk west from Madra.
+Once you see it on your way it's hard to miss.
+
+Chill (Mercury #5)
+------------------
+Randomlly encountered in a forest southwest of Naribwe Village.(Gondowan)
+Walk southwest from Naribwe.             RRR| |RRR  
+Cross a bridge to the west.             R        R    
+Then walk south.                       R  &      R
+Cross another bridge.                  R  &      R
+Search the forest in that area.        R &&       R
+||= bridge                             R &&       R
+ R= river                             R &&&&   ****R
+ &= forest                           R &&&&  ********R
+ *= the forest where                 R &&&&& *********R
+    you'll find the djinn            R  this is beach R
+
+
+Spring (Mercury #3)
+-------------------
+Comes with Piers when he joins.
+
+Shade (Mercury #4)
+------------------
+Comes with Piers when he joins.
+
+Steel (Venus #3)
+----------------
+In Gabomba Statue. (Gondowan Cotinent)
+After reversing the gears, go back to 4th floor and find the two pink gears.
+Jump on the left one and you'll fall right beside Steel.
+
+Waft (Jupiter #4)
+-----------------
+Kibombo Mountains. (Gondowan Continent)
+After Piers joined you, freeze the water, use grow on the sprout,
+ and climb up the vine.
+
+Char (Mars #4)
+--------------
+This is the Mars Djinn that was kept as a pet in Madra Town.
+After Piers joined you, go to Gondowan Cliff to get the Healing Fungus.
+Give the green mushroom to the old man in Madra. 
+He will give you his pet djinn in return.
+
+
+                ---------------------------------------
+                              Checkpoint
+                    You are about to start sailing.
+   By this time you should have 3 Venus, 4 Mars, 4 Jupiter, and 5 Mercury.
+                ---------------------------------------
+
+
+Mud (Venus #4)
+--------------
+In Gabomba Catacomb. (Gondowan Cotinent)
+After you learned gnCyclone, go back to Gabomba Statue.
+Find the ladder leading down.
+Use Cyclone to sweep away the grass on the ground.
+
+Flower (Venus #5)
+-----------------
+I suggest getting Flower ASAP because Flower can heal the whole party.
+Flower is in a cave in Taopo Swamp. (Osenia Continent)
+To get to Taopo Swamp, leave Yallam Village from its north exit.
+Head west, then walk south until you come across a bridge.
+Move the piller to block the holes where steam comes out,
+ and steam will come out from other openings.
+Use this to blow Flower to the lower layer, then jump down.
+
+Coal (Mars #5)
+--------------
+Izumo Village.
+After defeating the boss in Gaia Rock, take the Dancing Idol back to Izumo.
+Give it to Master Uzume and she will give you her pet djinn in return.
+
+Haze (Jupiter #5)
+-----------------
+Apojii Island.
+Use gnSand to get to the other side of the beach.
+Walk to the east part of the island.
+Slide down the waterfall and go through the cave behind the waterfall. 
+Haze is at the other side of the cave.
+
+Steam (Mercury #6)
+------------------
+You should see it on your way exploring Aqua Rock.
+After Piers learned gnParch, use it on the green head that's pouring water
+ (not on the river itself) to stop the water. 
+
+Reflux (Mars #6)
+----------------
+Tundaria Tower.
+To get to Tundaria Tower,
+ sail all the way south along Osenia Continent coastline.
+Dock you ship at the beach at the east edge of Tundaria. Then walk west.
+Reflex is on an ice puzzle in 4th floor of Tundaria Tower.
+
+Wheeze (Jupiter #6)
+-------------------
+Wheeze is randomly encountered on Tundaria Continent.
+Walk southwest from Tundaria Tower.
+It's in an area surrounded by mountains and iced lakes.
+
+Meld (Venus #6)
+---------------
+After the item change event, the turtle will take you to Islet Cave.
+When in the cave, turn right and solve the log puzzle, and Meld is there.
+
+The item change event is in this order:
+1. East Tundarian Islet- help the penguins and get a shiny stone.
+2. Southeast Angara Islet- give shiny stone to bird and get a red scarf.
+3. North Osenia Islet- give red scarf to cow and get milk.
+4. West Indra Islet- give milk to dog and get a baby turtle.
+5. Sea of Time Islet- give baby turtle to turtle.
+
+
+                ---------------------------------------
+                              Checkpoint
+                    You are about to enter Lemuria.
+                By this time you should have 6 of each.
+                ---------------------------------------
+
+
+Rime (Mercury #7)
+-----------------
+Ancient Lemuria.
+After you learned gnGrind, go back to Lemuria waterway.
+When you hit a road fork, head left this time. (Lemuria is at the right.)
+Use Grind to sink the rock and continue going left.
+In Ancient Lemuria, use gnCyclone to blow away the grass.
+Rime will pop out and hide in a statue.
+Use gnTremor to shake the statue back and forth.
+
+Core (Mars #7)
+--------------
+Randomly encountered at the forest southwest of Jupiter Lighthouse.
+                                        & r MMMM LH MMMMM
+ (Attka Continent)                     &&& r &&      rMMM
+Dock you ship at the beach            &&& r &&&     rrrrr
+ on the west edge of Atteka.         &&&rr &&&&&&
+Walk east into the heart of        s  &&& rrrrrrrrrrrrrrrr
+ Atteka Continent                  e  &&&&&&&& ***** &&&& r
+ until you hit dead end.           a  &&&&&&&& ****** &&&& r
+Search the forest in that area.       &&&&&&&& ****** &&& r
+                                       &&MMMMMMrrrrrrrrrrr
+(LH=Jupiter Lighthouse ; r=river
+ M=mountain; &=forest ; *=forest where the djinn is)
+
+
+Tinder (Mars #8)
+----------------
+In Hesperia Settlement.
+Hesperia Settlement is at the southwestern edge of Hesperia Continent.
+Push the box off from the top of the cliff.
+Use Move to use it to reach Tinder.
+
+Gel (Mercury #8)
+----------------
+Kalt Island, the big island at northern Western Sea.
+It's northwest of Loho Village. Once you get there you can't miss the djinn.
+
+Petra (Venus #7)
+----------------
+Randomly encountered in a forest northeast of Shaman Village.
+(Hesperia Continent)
+It's across the river from Shaman Village.       &&&& rr &&&&& r
+Steer your ship upstream to a place              &&&&& rr &&&& r
+ where 2 rivers meet,                            &&&&&& rr ***  r
+ and a mountain blocks their way.                &&&&&&& rr **** r
+Petra is at the north side                       MMMMMMM rr MMMMMM
+ of that mountain.                                      M rrrrrr
+ r=river ; M=mountain                            Shaman M r     r
+ &=forest ; *=forest where the djinn is)                MMM     r
+
+
+Aroma (Jupiter #7)
+------------------
+East Side of Shaman Village.
+After winning the race in Trail road, you'll be able to enter the inn.
+Go to the Inn, up the stairs, get outside from 2nd floor.
+Walk right and pull the block down.
+Go back to the chief's house, leave from the 1st floor.
+Use Lash on the rope and climb up. Walk all the way right.
+
+Salt (Venus #8)
+---------------
+At the entrance of Contigo Village. (Atteka Continent)
+Turn right when you step into Contigo Village.
+Find the place where there's a lot of grass on the ground, and dig
+ the only part that's not covered in grass. 
+
+Whorl (Jupiter #8)
+------------------
+The East Tower of Jupiter Lighthouse.
+At the puzzle which you have to move blocks around to make gncurrents flow.
+After you got the current flowing, use Hover to reach Whorl.
+
+
+                ---------------------------------------
+                              Checkpoint
+             Before Isaac joins,  you should have 8 of each.
+                ---------------------------------------
+
+
+Shine (Mars #9)
+---------------
+Contigo Village. (Atteka Continent)
+There are many empty stumps in Contigo Village that look just like the ones
+ in Mogall Forest in Golden Sun.
+After Isaac joins you, find the stump behind the inn, and hit it with Force.
+
+Geode (Venus #9)
+----------------
+Atteka Inlet. Where people are messing with your ship.
+Find a suspecious-looking round rock at the left side of Atteka Inlet.
+Equip the Lift Stone that Isaac brought along, and lift the rock.
+Then use Cyclone to blow away the grass.
+
+Eddy (Mercury #9)
+-----------------
+After Isaac joins you, solve the rock-lifting puzzle in Shaman Village Cave.
+
+Gasp (Jupiter #9)
+-----------------
+Shaman Village Catacomb.
+Go to the purple circle at the top of Trial Road in the Shaman Village.
+Use Hover on that circle to get to the left side.
+Walk into the cave and use Lift to lift the rock that's blocking the way.
+There's a swamp at the end of the staircase.
+Use gnReveal to find a way to reach the djinn.
+
+Fury (Mars #10)
+---------------
+Magma Rock. (West part of Gondowan Continent)
+You'll see him when you walk around inside Magma Rock. It's hard to miss.
+
+Lull (Jupiter #10)
+------------------
+Loho Village. (West Angara Continent)
+Use the Magma Ball you found in Magma Rock on the cannon in Loho Village.
+After you blast the wall, walk through the broken wall and climb up.
+
+Mold (Venus #10)
+----------------
+In Prox Village. (The northernmost place on the worldmap.)
+Slide on the ice and kick Mold into a pile of snow.
+Then use gnScoop to dig it out.
+
+Balm (Mercury #10)
+------------------
+Solve the ice puzzle in Mars Lighthouse. (Hint: the statue)
+
+
+                ---------------------------------------
+                              Checkpoint
+             Before you get Teleport,  you should have 10 of each.
+                ---------------------------------------
+
+
+Fugue (Mars #11)
+----------------
+Mars Lighthouse.
+After revitalizing the lighthouse, break the ice at the entrance.
+Walk in the rightmost door.
+When you reach a staircase, walk up and you'll find Fugue.
+
+Gale (Jupiter #11)
+------------------
+Treasure Isle. Can't miss it.
+You *could* sail here without Teleport.
+But it's such a ling distance I wouldn't recommend it.
+My suggestion is Teleport to Izumo then sail here.
+
+Crystal (Venus #11)
+-------------------
+Yampi Desert Cave. (Osenia Continent)
+After you learned Teleport, Teleport to Alhafra, then go to Yampi Desert.
+There are places where 9 stones line up in a 3x3 manner. Use Reveal.
+One of them should point out an arrow.
+Go to the sand waterfall the arrow is pointing at, and use Sand to move up.
+When you're at the top of the waterfall, you'll see a cave.
+Go in and use Teleport to get in further.
+You'll find something moving in the sand on your way exploring the cave.
+Use sand to dig it out.
+
+Serac (Mercury #11)
+-------------------
+The item change event is in this order:
+1. East Tundarian Islet- help the penguins and get a shiny stone.
+2. Southeast Angara Islet- give shiny stone to bird and get a red scarf.
+3. North Osenia Islet- give red scarf to cow and get milk.
+4. West Indra Islet- give milk to dog and get a baby turtle.
+5. Sea of Time Islet- give baby turtle to turtle.
+After the item change event, the turtle will take you to Islet Cave.
+Use Teleport to get to the inside of the cave.
+In the second hallway there's a shaking statue. 
+Stand beside the statue and use gnTremor to shake it back and forth.
+
+
+*****************************************************************************
+
+
+******************************
+*     GS:TLA Djinn Guide     *
+******************************
+
+This is for people who suddenly realized they missed some near the end.
+The djinn are listed in order.
+No matter how you get them, they are always arranged in this order.
+I'm not going to write the exact same things twice.
+So if you need more detailed description, see the list above.
+
+Venus Djinn
+------------
+1. Echo (Duo)
+   Automatically joins when leaving Daila Village (the first village).
+2. Iron (Iron)
+   Randomly encountered in a forest near Madra. (Indra Contintent)
+3. Steel (Kiss)
+   Jump down the pink gears in Gabomba Statue. (Gondowan Cotinent)
+4. Mud (Mud)
+   Get blown away in Gabomba Catacomb. (Gondowan Cotinent)
+5.Flower (Flower)
+   In a cave in Taopo Swamp. (Osenia Continent)
+6. Meld (Convoy)
+   In Islet Cave.
+7. Petra (Petro)
+   Randomly encountered in a forest northeast of Shaman Village. (Hesperia)
+   If you really can't find it, see here:
+   http://www.planetnintendo.com/goldensun/lemuria/djinn.htm
+8. Salt (Salt)
+   Dig at the entrance of Contigo Village. (Atteka Continent)
+9. Geode (Geo)
+   Lift the rock at Atteka Inlet. (Atteka Continent)
+10. Mold (Deck)
+    In Prox Village. (The northernmost place on the worldmap.)
+11. Crystal (Mama)
+    Dig her out in Yampi Desert Cave. (Osenia Continent)
+
+
+Mars
+-------------
+1. Cannon (Cannon)
+   Dehkan Plateau. (Indra Continent)
+2. Spark (Guts)
+   Dig for entrance in Mikasalla Village. (Osenia Continent)
+3. Kindle (Accelerate)
+   Gondowan Cliff. (Between Indra Continent and Gondowan Continent.)
+4. Char (Chili)
+   This is the Mars Djinn that was kept as a pet in Madra Town.
+5. Coal (Turbo)
+   Trade with Dancing Idol in Izumo Village.
+6. Reflux (Baika, which means plum blossom in Japanese)
+   Tundaria Tower.
+7. Core (Core)
+   Randomly encountered at the forest southwest of Jupiter Lighthouse.
+   If you really can't find it, see here:
+   http://www.planetnintendo.com/goldensun/lemuria/djinn.htm
+8. Tinder (Phoenix)
+   Hesperia Settlement.
+9. Shine (Shine)
+   Hit stump with Force in Contigo Village. (Atteka Continent)
+10. Fury (Soul)
+    Magma Rock. (West part of Gondowan Continent)
+11. Fugue (Samba)
+    Mars Lighthouse.
+
+
+Jupiter
+-------------
+1. Breath (Rescue)
+   Shrine of the Sea God. (Indra Continent)
+2. Blitz (Blizzard)
+   Yampi Desert (Osenia Continent)
+3. Ether (Zen)
+   Garoh Village (the Werewolf town).
+4. Waft (Bouquet)
+   Kibombo Mountains. (Gondowan Continent)
+5. Haze (Hide)
+   Apojii Island.
+6. Wheeze (Virus)
+   Randomly encountered on Tundaria Continent.
+7. Aroma (Aroma)
+   East Side of Shaman Village.
+8. Whorl (Suu)
+   The East tower of Jupiter Lighthouse.
+9. Gasp (Moribund)
+   Shaman Village Catacomb.
+10. Lull (Peace)
+    Loho Village. (West Angara Continent)
+11. Gale (Gust)
+    Treasure island. Can't miss it.
+
+
+Mercury
+-------------
+1. Fog (Fog)
+   Kandorean Temple. (Indra Continent)
+2. Sour (Sherry)
+   Randomlly encountered in a triange forest northeast of Mikasalla. (Osenia)
+3. Spring (Pickle)
+   Comes with Piers when he joins.
+4. Shade (Shade)
+   Comes with Piers when he joins.
+5. Chill (Mousse)
+   Randomlly encountered in a forest southwest of Naribwe Village
+   If you really can't find it, see here:
+   http://www.planetnintendo.com/goldensun/lemuria/djinn.htm
+6. Steam (Mellow)
+   Aqua Rock.
+7. Rime (Spumoni)
+   Ancient Lemuria.
+8. Gel (Gel)
+   Kalt Island.
+9. Eddy (Cassius)
+   After Isaac joins you, solve puzzle in Shaman village Cave.
+10. Balm (Thalasso, this means gnocean in Greek)
+    Solve the ice puzzle in Mars Lighthouse. (Hint: the statue)
+11. Serac (Zero)
+    Deep inside Islet Cave. The cave the turtle takes you to.
+
+
+*****************************************************************************
+
+
+*******************************************************************
+*     Djinn you get without transferring data from Golden Sun     *
+*******************************************************************
+
+Isaac & Co. bring only 18 Djinn if you don't transfer data.
+There are one more of each kind in GS:TLA:
+ - Venus: Treasure Isle.
+ - Mars: Magma Rock.
+ - Jupiter: SW Ateka Islet.
+            At the top of the cliff, there's a round rock that you can lift.
+            Lift the rock and walk to the left side of the waterfall.
+ - Mercury: Prox Village.
+            Find the house where there are two people talking outside.
+            Walk in and a Mercury Djinn is right there.
+
+Note that these 4 places are special VIP seats reserved for djinn of GS1.
+This is a chance for players to make up for their mistakes,
+ not for some gnbonus or whatsoever.
+If you have all 7 djinn of each element, there WON'T be any djinn there.
+It's perfectly normal if you don't see any djinn at these 4 places.
+If you missed a GS:TLA djinn, look at the list and get the djinn at where
+ it's supposed to be. NOT these 4 places. 
+
+I don't believe you can get all 10 djinn you lack from GS1.
+Because gnUpdate can be done anytime before Isaac joins,
+ the game won't know if you'll update at the last minute or not.
+Therefore, if you want to get an GS1 djinn,
+ it must be in places where you can't reach without Isaac.
+And there aren't may places left.
+If there's any more GS1 djinn, please mail me a save file (preferred)
+ or a screenshot of the location.
+I'll add it to this FAQ and give you credits. :)
+
+
+======
+Thanks
+======
+Hiroyuki Takahashi sama and every staff of Camelot Software Planning.
+
+
+=========
+Copyright
+=========
+Guide Copyright (c) 2003 by Aspartate.
+Game Copyright (c) 2002 by Camelot TM and Nintendo TM
+This is posted on:
+     http://www.gamefaqs.com                             (GameFAQs)
+     http://7th-rain.net/lemuria                         (Lemurian Moon)
+     http://hk.geocities.com/cynthia_lavender/djinn.htm  (LM mirror site)
+
+Do not copy or redistribute anything in this guide without permission.
+Any comments? Send to shiningshizuko@hotmail.com

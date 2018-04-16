@@ -1,0 +1,118 @@
+(F): Fire Aligned
+(E): Earth Aligned
+(W): Water Aligned
+(A): Air Aligned
+(D): Medium Upgrade Class Only
+(I): Item Class Only
+
+name,HP,PP,Att,Def,Agi,Lck,Eth,Wtr,Fre,Wnd,type
+Squire,110,80,110,100,110,100,5,\N,\N,\N,basic
+Knight,130,90,120,110,120,100,7,\N,\N,\N,basic
+Gallant,150,100,130,120,130,100,9,\N,\N,\N,basic
+Lord,170,110,140,130,140,100,11,\N,\N,\N,basic
+Slayer,190,120,150,140,150,100,13,\N,\N,\N,basic
+Water Seer,90,130,90,100,80,130,\N,5,\N,\N,basic
+Scribe,100,140,100,110,90,130,\N,7,\N,\N,basic
+Cleric,120,150,110,120,100,130,\N,9,\N,\N,basic
+Paragon,140,160,120,130,110,130,\N,11,\N,\N,basic
+Angel,160,170,130,140,120,130,\N,13,\N,\N,basic
+Guard,110,80,100,110,70,100,\N,\N,5,\N,basic
+Soldier,130,90,110,120,80,100,\N,\N,7,\N,basic
+Warrior,150,100,120,130,90,100,\N,\N,9,\N,basic
+Champion,170,110,130,140,100,100,\N,\N,11,\N,basic
+Hero,190,120,140,150,110,100,\N,\N,13,\N,basic
+Wind Seer,80,140,80,90,130,110,\N,\N,\N,5,basic
+Magician,90,150,90,100,140,110,\N,\N,\N,7,basic
+Mage,110,160,100,110,150,110,\N,\N,\N,9,basic
+Magister,130,170,110,120,160,110,\N,\N,\N,11,basic
+Sorcerer,150,180,120,130,170,110,\N,\N,\N,13,basic
+Mariner,110,90,100,100,90,120,\N,5,\N,\N,lostage
+Privateer,130,100,110,110,100,120,\N,7,\N,\N,lostage
+Commander,150,110,120,120,110,120,\N,9,\N,\N,lostage
+Captain,170,120,130,130,120,120,\N,11,\N,\N,lostage
+Admiral,190,130,140,140,130,120,\N,13,\N,\N,lostage
+Flame User,100,120,100,100,120,90,\N,\N,5,\N,lostage
+Witch,110,130,110,110,130,90,\N,\N,7,\N,lostage
+Hex,130,140,120,120,140,90,\N,\N,9,\N,lostage
+Fire Master,150,150,130,130,150,90,\N,\N,11,\N,lostage
+Justice,170,160,140,140,160,90,\N,\N,13,\N,lostage
+Swordsman (E),100,90,110,110,90,120,5,0,\N,\N,mercury
+Defender (E),120,100,120,120,100,120,5,2,\N,\N,mercury
+Cavalier (E),140,110,130,130,110,120,5,4,\N,\N,mercury
+Guardian,170,130,140,140,130,120,6,6,\N,\N,mercury
+Protector,190,140,150,150,140,120,7,7,\N,\N,mercury
+Swordsman (F),100,90,110,110,90,120,\N,0,5,\N,mercury
+Defender (F),120,100,120,120,100,120,\N,2,5,\N,mercury
+Cavalier (F),140,110,130,130,110,120,\N,4,5,\N,mercury
+Luminier,170,130,140,140,130,120,\N,6,6,\N,mercury
+Radiant,190,140,150,150,140,120,\N,7,7,\N,mercury
+Dragoon,160,130,140,140,110,130,3,3,3,\N,mercury
+Templar,180,140,150,150,120,130,4,4,4,\N,mercury
+Paladin,200,150,160,160,130,130,4,5,4,\N,mercury
+Apprentice,100,120,110,100,120,90,5,\N,\N,0,jupiter
+Illusionist (E),120,130,120,110,130,90,5,\N,\N,2,jupiter
+Enchanter (E),140,140,130,120,140,90,5,\N,\N,4,jupiter
+Conjurer (E),170,160,140,130,160,90,6,\N,\N,6,jupiter
+War Adept (E),190,170,150,140,170,90,7,\N,\N,7,jupiter
+Page,100,120,110,100,120,90,\N,\N,5,0,jupiter
+Illusionist (F),120,130,120,110,130,90,\N,\N,5,2,jupiter
+Enchanter (F),140,140,130,120,140,90,\N,\N,5,4,jupiter
+Conjurer (F),170,160,140,130,160,90,\N,\N,6,6,jupiter
+War Adept (F),190,170,150,140,170,90,\N,\N,7,7,jupiter
+Ninja,160,140,150,120,170,80,3,\N,3,3,jupiter
+Disciple,180,150,160,130,180,80,4,\N,4,4,jupiter
+Master,200,160,170,140,190,80,4,\N,4,5,jupiter
+Seer (W),90,130,90,90,110,100,0,5,\N,\N,venus
+Diviner (W),110,140,100,100,120,100,2,5,\N,\N,venus
+Shaman (W),120,150,110,110,130,100,4,5,\N,\N,venus
+Druid (W),150,170,130,130,150,100,6,6,\N,\N,venus
+Oracle (W),170,180,140,140,160,100,7,7,\N,\N,venus
+Seer (A),90,130,90,90,110,100,0,\N,\N,5,venus
+Diviner (A),110,140,100,100,120,100,2,\N,\N,5,venus
+Shaman (A),120,150,110,110,130,100,4,\N,\N,5,venus
+Druid (A),150,170,130,130,150,100,6,\N,\N,6,venus
+Oracle (A),170,180,140,140,160,100,7,\N,\N,7,venus
+Medium,130,170,120,120,150,90,3,3,\N,3,venus
+Conjurer (D),150,180,130,130,160,90,4,4,\N,4,venus
+Dark Mage (D),170,190,140,140,170,90,5,4,\N,4,venus
+Pilgrim (W),90,120,90,100,120,120,\N,5,0,\N,mars
+Wanderer (W),110,130,100,110,130,120,\N,5,2,\N,mars
+Ascetic (W),120,140,110,120,140,120,\N,5,4,\N,mars
+Water Monk,150,160,130,140,160,120,\N,6,6,\N,mars
+Guru (W),170,170,140,150,170,120,\N,7,7,\N,mars
+Pilgrim (A),90,120,90,100,120,120,\N,\N,0,5,mars
+Wanderer (A),110,130,100,110,130,120,\N,\N,2,5,mars
+Ascetic (A),120,140,110,120,140,120,\N,\N,4,5,mars
+Fire Monk,150,160,130,140,160,120,\N,\N,6,6,mars
+Guru (A),170,170,140,150,170,120,\N,\N,7,7,mars
+Ranger,130,160,120,120,160,120,\N,3,3,3,mars
+Bard,150,170,130,130,170,120,\N,4,4,4,mars
+Warlock,170,180,140,140,180,120,\N,4,5,4,mars
+Brute,100,70,120,90,110,70,1,\N,1,\N,venus+mars
+Ruffian,120,80,130,100,120,70,2,\N,2,\N,venus+mars
+Savage,140,90,140,110,130,70,4,\N,4,\N,venus+mars
+Barbarian,160,100,150,120,140,70,5,\N,5,\N,venus+mars
+Berserker,180,110,160,130,150,70,6,\N,6,\N,venus+mars
+Chaos Lord,200,120,170,140,160,70,7,\N,7,\N,venus+mars
+Samurai,190,130,150,140,140,90,4,\N,4,3,venus+mars
+Ronin,210,140,160,150,150,90,5,\N,5,4,venus+mars
+Hermit,80,140,80,90,130,120,\N,1,\N,1,jupiter+mercury
+Elder,90,150,90,100,140,120,\N,2,\N,2,jupiter+mercury
+Scholar,110,160,100,110,150,120,\N,4,\N,4,jupiter+mercury
+Savant,130,170,110,120,160,120,\N,5,\N,5,jupiter+mercury
+Sage,150,180,120,130,170,120,\N,6,\N,6,jupiter+mercury
+Wizard,170,190,130,140,180,120,\N,7,\N,7,jupiter+mercury
+White Mage,150,180,130,130,150,130,3,4,\N,4,jupiter+mercury
+Pure Mage,170,190,140,140,160,130,4,5,\N,5,jupiter+mercury
+Pierrot,100,80,100,110,130,120,0,0,0,0,item
+Harlequin,130,100,110,120,140,120,1,1,1,1,item
+Punchinello,160,110,130,130,150,120,2,2,2,2,item
+Acrobat,190,120,140,140,160,120,3,3,3,3,item
+Tamer,100,70,110,120,90,80,0,0,0,0,item
+Trainer,130,90,120,130,100,80,1,1,1,1,item
+Beastkeeper,160,100,140,140,110,80,2,2,2,2,item
+Beast Lord,190,110,150,150,120,80,3,3,3,3,item
+Dark Mage (I),80,140,80,90,140,90,0,0,0,0,item
+Crypt Lord,100,160,100,110,150,90,1,1,1,1,item
+Necrolyte,130,170,120,120,160,90,2,2,2,2,item
+Necromage,160,190,130,130,170,90,3,3,3,3,item
