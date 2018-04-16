@@ -1,28 +1,6 @@
 # main file to run battle damage calculations from
 
-# experimenting with classes: test code straight from article
-class Customer(object):
-    # Bank customer
-    IBAN = '12345'
-
-    def __init__(self, name, balance=0.0):
-        self.name = name
-        self.balance = balance
-
-    def withdraw(self,amount):
-        if amount > self.balance:
-            raise RuntimeError('Insufficient balance')
-        self.balance -= amount
-        return self.balance
-
-    def deposit(self,amount):
-        self.balance += amount
-        return self.balance
-
-test = Customer('Test Name',100.0)
-test.IBAN
-
-# Battle classes
+# battle classes
 class Adept(object):
 
     def __init__(self, HP_base = 0, PP_base = 0, ATT_base = 0, DEF_base = 0, AGI_base = 0, LCK_base = 0,\
@@ -78,6 +56,8 @@ class Monster(object):
     def __init__(self, HP, PP, ATT, DEF, AGI, LCK, turns,\
             venuspower, marspower, mercurypower, jupiterpower, venusresist, marsresist, mercuryresist, jupiterresist):
         print "hello"
+
+# basic initialisation
 
 isaac = Adept()
 garet = Adept()
