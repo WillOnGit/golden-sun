@@ -4,7 +4,6 @@
 class Adept(object):
 
     def __init__(self, HP_base = 0, PP_base = 0, ATT_base = 0, DEF_base = 0, AGI_base = 0, LCK_base = 0,\
-            venuspower = 0, marspower = 0, mercurypower = 0, jupiterpower = 0, venusresist = 0, marsresist = 0, mercuryresist = 0, jupiterresist = 0,\
             setdjinn = [], standbydjinn = [], weapon = "", shirt = "", trousers = "", boots = "", ring = "", undershirt = "", equipment = []):
         self.HP_base = HP_base
         self.PP_base = PP_base
@@ -12,14 +11,6 @@ class Adept(object):
         self.DEF_base = DEF_base
         self.AGI_base = AGI_base
         self.LCK_base = LCK_base
-        self.venuspower = venuspower
-        self.marspower = marspower
-        self.mercurypower = mercurypower
-        self.jupiterpower = jupiterpower
-        self.venusresist = venusresist
-        self.marsresist = marsresist
-        self.mercuryresist = mercuryresist
-        self.jupiterresist = jupiterresist
         self.setdjinn = setdjinn
         self.standbydjinn = standbydjinn
         self.weapon = weapon
@@ -29,6 +20,37 @@ class Adept(object):
         self.ring = ring
         self.undershirt = undershirt
         self.equipment = equipment
+        self.calculatestats()
+
+    def calculatestats(self):
+        # calculate elemental levels / power / resist etc
+        self.venuspower_base =
+        self.marspower_base =
+        self.mercurypower_base =
+        self.jupiterpower_base =
+        self.venuslevel = 
+        self.marslevel = 
+        self.mercurylevel = 
+        self.jupiterlevel = 
+        # add 5 to alignment self.element_base = 
+        self.venuspower = venuspower_base + 5 * venuslevel
+        self.marspower = marspower_base + 5 * marslevel
+        self.mercurypower = mercurypower_base + 5 * mercurylevel
+        self.jupiterpower = jupiterpower_base + 5 * jupiterlevel
+        self.venusresist = venusresist_base + 5 * venuslevel
+        self.marsresist = marsresist_base + 5 * marslevel
+        self.mercuryresist = mercuryresist_base + 5 * mercurylevel
+        self.jupiterresist = jupiterresist_base + 5 * jupiterlevel
+        # calculate dominants and class
+        # something
+        # calculate HP etc.
+        self.HP = 
+        self.PP = 
+        self.ATT = 
+        self.DEF = 
+        self.AGI = 
+        self.LCK = 
+        return "ok"
 
     def equipWeapon(self, weapon):
         return "weapon"
