@@ -25,10 +25,32 @@ test.IBAN
 # Battle classes
 class Adept(object):
 
-    def __init__(self, HP_base, PP_base, ATT_base, DEF_base, AGI_base, LCK_base,\
-            venuspower, marspower, mercurypower, jupiterpower, venusresist, marsresist, mercuryresist, jupiterresist,\
-            setdjinn, standbydjinn, weapon = "", armor = "", equipment = ""):
-        print "testing"
+    def __init__(self, HP_base = 0, PP_base = 0, ATT_base = 0, DEF_base = 0, AGI_base = 0, LCK_base = 0,\
+            venuspower = 0, marspower = 0, mercurypower = 0, jupiterpower = 0, venusresist = 0, marsresist = 0, mercuryresist = 0, jupiterresist = 0,\
+            setdjinn = [], standbydjinn = [], weapon = "", shirt = "", trousers = "", boots = "", ring = "", undershirt = "", equipment = []):
+        self.HP_base = HP_base
+        self.PP_base = PP_base
+        self.ATT_base = ATT_base
+        self.DEF_base = DEF_base
+        self.AGI_base = AGI_base
+        self.LCK_base = LCK_base
+        self.venuspower = venuspower
+        self.marspower = marspower
+        self.mercurypower = mercurypower
+        self.jupiterpower = jupiterpower
+        self.venusresist = venusresist
+        self.marsresist = marsresist
+        self.mercuryresist = mercuryresist
+        self.jupiterresist = jupiterresist
+        self.setdjinn = setdjinn
+        self.standbydjinn = standbydjinn
+        self.weapon = weapon
+        self.shirt = shirt
+        self.trousers = trousers
+        self.boots = boots
+        self.ring = ring
+        self.undershirt = undershirt
+        self.equipment = equipment
 
     def equipWeapon(self, weapon):
         return "weapon"
@@ -57,11 +79,11 @@ class Monster(object):
             venuspower, marspower, mercurypower, jupiterpower, venusresist, marsresist, mercuryresist, jupiterresist):
         print "hello"
 
-#isaac = Adept()
-#garet = Adept()
-#ivan = Adept()
-#mia = Adept()
-#felix = Adept()
-#jenna = Adept()
-#sheba = Adept()
-#piers = Adept()
+isaac = Adept()
+garet = Adept()
+ivan = Adept()
+mia = Adept()
+felix = Adept()
+jenna = Adept()
+sheba = Adept()
+piers = Adept()
