@@ -1,4 +1,9 @@
 # main file to run battle damage calculations from
+#mysql stuff
+import mysql.connector
+
+cnx = mysql.connector.connect(user='gsuser', password='gsuser_pass', host=127.0.0.1, database='goldensun')
+cnx.close()
 
 # battle classes
 class Adept(object):
