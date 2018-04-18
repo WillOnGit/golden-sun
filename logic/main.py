@@ -1,15 +1,27 @@
 # main file to run battle damage calculations from
-#mysql stuff
+
+# mysql stuff
 import mysql.connector
 
-cnx = mysql.connector.connect(user='gsuser', password='gsuser_pass', host=127.0.0.1, database='goldensun')
-cnx.close()
+sql_user = 'gsuser'
+sql_password = 'gsuser_pass'
+sql_host = '127.0.0.1'
+sql_database = 'goldensun'
+
+connection = mysql.connector.connect(user = sql_user, password = sql_password, host = sql_host, database = sql_database)
+
+gsdb = connection.cursor()
+
+# queries
+
+query_elemental = "SELECT venuspower, venusresist, marspower, marsresist, mercurypower, mercuryresist, jupiterpower, jupiterresist FROM stats_elemental WHERE name = %s"
 
 # battle classes
 class Adept(object):
 
-    def __init__(self, HP_base = 0, PP_base = 0, ATT_base = 0, DEF_base = 0, AGI_base = 0, LCK_base = 0,\
+    def __init__(self, adept_name = '', HP_base = 0, PP_base = 0, ATT_base = 0, DEF_base = 0, AGI_base = 0, LCK_base = 0,\
             setdjinn = [], standbydjinn = [], weapon = "", shirt = "", trousers = "", boots = "", ring = "", undershirt = "", equipment = []):
+        self.adept_name = adept_name
         self.HP_base = HP_base
         self.PP_base = PP_base
         self.ATT_base = ATT_base
@@ -29,32 +41,38 @@ class Adept(object):
 
     def calculatestats(self):
         # calculate elemental levels / power / resist etc
-        self.venuspower_base =
-        self.marspower_base =
-        self.mercurypower_base =
-        self.jupiterpower_base =
-        self.venuslevel = 
-        self.marslevel = 
-        self.mercurylevel = 
-        self.jupiterlevel = 
+        gsdb.execute(query_elemental, (self.adept_name,))
+        for (a,b,c,d,e,f,g,h) in gsdb:
+            self.venuspower_base = a
+            self.venusresist_base = b
+            self.marspower_base = c
+            self.marsresist_base = d
+            self.mercurypower_base = e
+            self.mercuryresist_base = f
+            self.jupiterpower_base = g
+            self.jupiterresist_base = h
+        #self.venuslevel = 
+        #self.marslevel = 
+        #self.mercurylevel = 
+        #self.jupiterlevel = 
         # add 5 to alignment self.element_base = 
-        self.venuspower = venuspower_base + 5 * venuslevel
-        self.marspower = marspower_base + 5 * marslevel
-        self.mercurypower = mercurypower_base + 5 * mercurylevel
-        self.jupiterpower = jupiterpower_base + 5 * jupiterlevel
-        self.venusresist = venusresist_base + 5 * venuslevel
-        self.marsresist = marsresist_base + 5 * marslevel
-        self.mercuryresist = mercuryresist_base + 5 * mercurylevel
-        self.jupiterresist = jupiterresist_base + 5 * jupiterlevel
+        #self.venuspower = venuspower_base + 5 * venuslevel
+        #self.marspower = marspower_base + 5 * marslevel
+        #self.mercurypower = mercurypower_base + 5 * mercurylevel
+        #self.jupiterpower = jupiterpower_base + 5 * jupiterlevel
+        #self.venusresist = venusresist_base + 5 * venuslevel
+        #self.marsresist = marsresist_base + 5 * marslevel
+        #self.mercuryresist = mercuryresist_base + 5 * mercurylevel
+        #self.jupiterresist = jupiterresist_base + 5 * jupiterlevel
         # calculate dominants and class
         # something
         # calculate HP etc.
-        self.HP = 
-        self.PP = 
-        self.ATT = 
-        self.DEF = 
-        self.AGI = 
-        self.LCK = 
+        #self.HP = 
+        #self.PP = 
+        #self.ATT = 
+        #self.DEF = 
+        #self.AGI = 
+        #self.LCK = 
         return "ok"
 
     def equipWeapon(self, weapon):
@@ -86,11 +104,11 @@ class Monster(object):
 
 # basic initialisation
 
-isaac = Adept()
-garet = Adept()
-ivan = Adept()
-mia = Adept()
-felix = Adept()
-jenna = Adept()
-sheba = Adept()
-piers = Adept()
+isaac = Adept("Isaac")
+garet = Adept("Garet")
+ivan = Adept("Ivan")
+mia = Adept("Mia")
+felix = Adept("Felix")
+jenna = Adept("Jenna")
+sheba = Adept("Sheba")
+piers = Adept("Piers")
