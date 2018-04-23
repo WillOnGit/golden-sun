@@ -14,7 +14,8 @@ gsdb = connection.cursor()
 
 # queries
 
-query_elemental = "SELECT venuspower, venusresist, marspower, marsresist, mercurypower, mercuryresist, jupiterpower, jupiterresist FROM stats_elemental WHERE name = %s"
+query_elemental = "SELECT venuspower, venusresist, marspower, marsresist, mercurypower, mercuryresist, jupiterpower, jupiterresist, element FROM stats_elemental WHERE name = %s"
+query_djinn = "SELECT HP, PP, ATT, DEF, AGI, LCK, element FROM djinni WHERE name = %s"
 
 # battle classes
 class Adept(object):
@@ -40,9 +41,20 @@ class Adept(object):
         self.calculatestats()
 
     def calculatestats(self):
-        # calculate elemental levels / power / resist etc
+        # initialise elemental levels and djinn bonuses
+        self.venuslevel = 0
+        self.marslevel = 0
+        self.mercurylevel = 0
+        self.jupiterlevel = 0
+        self.djinni_HP_bonus = 0
+        self.djinni_PP_bonus = 0
+        self.djinni_ATT_bonus = 0
+        self.djinni_DEF_bonus = 0
+        self.djinni_AGI_bonus = 0
+        self.djinni_LCK_bonus = 0
+        # calculate base elemental levels / power / resist
         gsdb.execute(query_elemental, (self.adept_name,))
-        for (a,b,c,d,e,f,g,h) in gsdb:
+        for (a,b,c,d,e,f,g,h,i) in gsdb:
             self.venuspower_base = a
             self.venusresist_base = b
             self.marspower_base = c
@@ -51,23 +63,52 @@ class Adept(object):
             self.mercuryresist_base = f
             self.jupiterpower_base = g
             self.jupiterresist_base = h
-        #self.venuslevel = 
-        #self.marslevel = 
-        #self.mercurylevel = 
-        #self.jupiterlevel = 
-        # add 5 to alignment self.element_base = 
-        #self.venuspower = venuspower_base + 5 * venuslevel
-        #self.marspower = marspower_base + 5 * marslevel
-        #self.mercurypower = mercurypower_base + 5 * mercurylevel
-        #self.jupiterpower = jupiterpower_base + 5 * jupiterlevel
-        #self.venusresist = venusresist_base + 5 * venuslevel
-        #self.marsresist = marsresist_base + 5 * marslevel
-        #self.mercuryresist = mercuryresist_base + 5 * mercurylevel
-        #self.jupiterresist = jupiterresist_base + 5 * jupiterlevel
+            if i == "venus":
+                self.alignment = "venus"
+                self.venuslevel += 5
+            if i == "mars":
+                self.alignment = "mars"
+                self.marslevel += 5
+            if i == "jupiter":
+                self.alignment = "jupiter"
+                self.jupiterlevel += 5
+            if i == "mercury":
+                self.alignment = "mercury"
+                self.mercurylevel += 5
+        # calculate djinn bonuses
+        for x in self.setdjinn:
+            gsdb.execute(query_djinn, (x,))
+            for (a,b,c,d,e,f,g) in gsdb:
+                self.djinni_HP_bonus += a
+                self.djinni_PP_bonus += b
+                self.djinni_ATT_bonus += c
+                self.djinni_DEF_bonus += d
+                self.djinni_AGI_bonus += e
+                self.djinni_LCK_bonus += f
+                if g == "venus":
+                    self.venuslevel += 1
+                if g == "mars":
+                    self.marslevel += 1
+                if g == "jupiter":
+                    self.jupiterlevel += 1
+                if g == "mercury":
+                    self.mercurylevel += 1
+        # calculate final power, resist based off final levels
+        self.venuspower = self.venuspower_base + 5 * self.venuslevel
+        self.marspower = self.marspower_base + 5 * self.marslevel
+        self.mercurypower = self.mercurypower_base + 5 * self.mercurylevel
+        self.jupiterpower = self.jupiterpower_base + 5 * self.jupiterlevel
+        self.venusresist = self.venusresist_base + 5 * self.venuslevel
+        self.marsresist = self.marsresist_base + 5 * self.marslevel
+        self.mercuryresist = self.mercuryresist_base + 5 * self.mercurylevel
+        self.jupiterresist = self.jupiterresist_base + 5 * self.jupiterlevel
         # calculate dominants and class
+        #self.first_dominant = max(self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel)
+        #self.second_dominant = max(self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel)
+        # calculate equipment bonuses
         # something
-        # calculate HP etc.
-        #self.HP = 
+        # calculate final stats based off base stats, djinn bonuses, class and equipment
+        #self.HP = self.
         #self.PP = 
         #self.ATT = 
         #self.DEF = 
