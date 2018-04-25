@@ -1,6 +1,7 @@
 # main file to run battle damage calculations from
 
 # mysql stuff
+
 import mysql.connector
 
 sql_user = 'gsuser'
@@ -17,10 +18,17 @@ gsdb = connection.cursor()
 query_elemental = "SELECT venuspower, venusresist, marspower, marsresist, mercurypower, mercuryresist, jupiterpower, jupiterresist, element FROM stats_elemental WHERE name = %s"
 query_djinn = "SELECT HP, PP, ATT, DEF, AGI, LCK, element FROM djinni WHERE name = %s"
 
+# static references/constants
+
+venus_dominance = ("venus","mercury","jupiter","mars")
+mercury_dominance = ("mercury","venus","mars","jupiter")
+mars_dominance = ("mars","jupiter","mercury","venus")
+jupiter_dominance = ("jupiter","mars","venus","mercury")
+
 # battle classes
 class Adept(object):
 
-    def __init__(self, adept_name = '', HP_base = 0, PP_base = 0, ATT_base = 0, DEF_base = 0, AGI_base = 0, LCK_base = 0,\
+    def __init__(self, adept_name = '', level = 0, HP_base = 0, PP_base = 0, ATT_base = 0, DEF_base = 0, AGI_base = 0, LCK_base = 0,\
             setdjinn = [], standbydjinn = [], weapon = "", shirt = "", trousers = "", boots = "", ring = "", undershirt = "", equipment = []):
         self.adept_name = adept_name
         self.HP_base = HP_base
@@ -103,11 +111,106 @@ class Adept(object):
         self.mercuryresist = self.mercuryresist_base + 5 * self.mercurylevel
         self.jupiterresist = self.jupiterresist_base + 5 * self.jupiterlevel
         # calculate dominants and class
-        #self.first_dominant = max(self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel)
-        #self.second_dominant = max(self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel)
+        self.dominance_array = [(self.venuslevel,"venus"),(self.marslevel,"mars"),(self.jupiterlevel,"jupiter"),(self.mercurylevel,"mercury")]
+        self.first_dominant = (0,"null")
+        self.second_dominant = (0,"null")
+        for x in arr:
+            if x[0] >= one:
+                if x[0] > one:
+                    two = one
+                    second = first
+                    one = x[0]
+                    first = x[1]
+                else:
+                    # check ties
+                    if alignment == "venus":
+                        for i in range(4):
+                            if v_ord[i] == first:
+                                break
+                            elif v_ord[i] == x[1]:
+                                two = one
+                                second = first
+                                one = x[0]
+                                first = x[1]
+                                break
+                    elif alignment == "mars":
+                        for i in range(4):
+                            if s_ord[i] == first:
+                                break
+                            elif s_ord[i] == x[1]:
+                                two = one
+                                second = first
+                                one = x[0]
+                                first = x[1]
+                                break
+                    elif alignment == "jupiter":
+                        for i in range(4):
+                            if j_ord[i] == first:
+                                break
+                            elif j_ord[i] == x[1]:
+                                two = one
+                                second = first
+                                one = x[0]
+                                first = x[1]
+                                break
+                    elif alignment == "mercury":
+                        for i in range(4):
+                            if m_ord[i] == first:
+                                break
+                            elif m_ord[i] == x[1]:
+                                two = one
+                                second = first
+                                one = x[0]
+                                first = x[1]
+                                break
+        
+            if x[0] >= two and first != x[1]:
+                if x[0] > two:
+                    two = x[0]
+                    second = x[1]
+                else:
+                    # check ties
+                    if alignment == "venus":
+                        for i in range(4):
+                            if v_ord[i] == second:
+                                break
+                            elif v_ord[i] == x[1]:
+                                two = x[0]
+                                second = x[1]
+                                break
+                    elif alignment == "mars":
+                        for i in range(4):
+                            if s_ord[i] == second:
+                                break
+                            elif s_ord[i] == x[1]:
+                                two = x[0]
+                                second = x[1]
+                                break
+                    elif alignment == "jupiter":
+                        for i in range(4):
+                            if j_ord[i] == second:
+                                break
+                            elif j_ord[i] == x[1]:
+                                two = x[0]
+                                second = x[1]
+                                break
+                    elif alignment == "mercury":
+                        for i in range(4):
+                            if m_ord[i] == second:
+                                break
+                            elif m_ord[i] == x[1]:
+                                two = x[0]
+                                second = x[1]
+                                break
         # calculate equipment bonuses
         # something
         # calculate final stats based off base stats, djinn bonuses, class and equipment
+        self.HP_mod = 1.0
+        self.PP_mod = 1.0
+        self.ATT_mod = 1.0
+        self.DEF_mod = 1.0
+        self.AGI_mod = 1.0
+        self.LCK_mod = 1.0
         #self.HP = self.
         #self.PP = 
         #self.ATT = 
@@ -153,3 +256,6 @@ felix = Adept("Felix")
 jenna = Adept("Jenna")
 sheba = Adept("Sheba")
 piers = Adept("Piers")
+
+#gsdb.close()
+#connection.close()
