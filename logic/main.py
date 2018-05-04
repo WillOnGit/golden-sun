@@ -112,96 +112,85 @@ class Adept(object):
         self.jupiterresist = self.jupiterresist_base + 5 * self.jupiterlevel
         # calculate dominants and class
         self.dominance_array = [(self.venuslevel,"venus"),(self.marslevel,"mars"),(self.jupiterlevel,"jupiter"),(self.mercurylevel,"mercury")]
-        self.first_dominant = (0,"null")
-        self.second_dominant = (0,"null")
-        for x in arr:
-            if x[0] >= one:
-                if x[0] > one:
-                    two = one
-                    second = first
-                    one = x[0]
-                    first = x[1]
+        self.first_dominant = (-1,"null")
+        self.second_dominant = (-1,"null")
+        for x in dominance_array:
+            if x[0] >= self.first_dominant[0]:
+                if x[0] > self.first_dominant[0]:
+                    # clear winner
+                    self.second_dominant = self.first_dominant
+                    self.first_dominant = x
                 else:
-                    # check ties
+                    # tiebreaks needed
                     if alignment == "venus":
                         for i in range(4):
-                            if v_ord[i] == first:
+                            if venus_dominance[i] == first_dominant[1]:
                                 break
-                            elif v_ord[i] == x[1]:
-                                two = one
-                                second = first
-                                one = x[0]
-                                first = x[1]
+                            elif venus_dominance[i] == x[1]:
+                                self.second_dominant = self.first_dominant
+                                self.first_dominant = x
                                 break
                     elif alignment == "mars":
                         for i in range(4):
-                            if s_ord[i] == first:
+                            if mars_dominance[i] == first_dominant[1]:
                                 break
-                            elif s_ord[i] == x[1]:
-                                two = one
-                                second = first
-                                one = x[0]
-                                first = x[1]
+                            elif mars_dominance[i] == x[1]:
+                                self.second_dominant = self.first_dominant
+                                self.first_dominant = x
                                 break
                     elif alignment == "jupiter":
                         for i in range(4):
-                            if j_ord[i] == first:
+                            if jupiter_dominance[i] == first_dominant[1]:
                                 break
-                            elif j_ord[i] == x[1]:
-                                two = one
-                                second = first
-                                one = x[0]
-                                first = x[1]
+                            elif jupiter_dominance[i] == x[1]:
+                                self.second_dominant = self.first_dominant
+                                self.first_dominant = x
                                 break
                     elif alignment == "mercury":
                         for i in range(4):
-                            if m_ord[i] == first:
+                            if mercury_dominance[i] == first_dominant[1]:
                                 break
-                            elif m_ord[i] == x[1]:
-                                two = one
-                                second = first
-                                one = x[0]
-                                first = x[1]
+                            elif mercury_dominance[i] == x[1]:
+                                self.second_dominant = self.first_dominant
+                                self.first_dominant = x
                                 break
         
-            if x[0] >= two and first != x[1]:
-                if x[0] > two:
-                    two = x[0]
-                    second = x[1]
+            if x[0] >= self.second_dominant[0] and self.first_dominant[1] != x[1]:
+                if x[0] > self.second_dominant[0]:
+                    # clear winner
+                    self.second_dominant = x
                 else:
-                    # check ties
+                    # tiebreaks needed
                     if alignment == "venus":
                         for i in range(4):
-                            if v_ord[i] == second:
+                            if venus_dominance[i] == second_dominant[1]:
                                 break
-                            elif v_ord[i] == x[1]:
-                                two = x[0]
-                                second = x[1]
+                            elif venus_dominance[i] == x[1]:
+                                self.second_dominant = x
                                 break
                     elif alignment == "mars":
                         for i in range(4):
-                            if s_ord[i] == second:
+                            if mars_dominance[i] == second_dominant[1]:
                                 break
-                            elif s_ord[i] == x[1]:
-                                two = x[0]
-                                second = x[1]
+                            elif mars_dominance[i] == x[1]:
+                                self.second_dominant = x
                                 break
                     elif alignment == "jupiter":
                         for i in range(4):
-                            if j_ord[i] == second:
+                            if jupiter_dominance[i] == second_dominant[1]:
                                 break
-                            elif j_ord[i] == x[1]:
-                                two = x[0]
-                                second = x[1]
+                            elif jupiter_dominance[i] == x[1]:
+                                self.second_dominant = x
                                 break
                     elif alignment == "mercury":
                         for i in range(4):
-                            if m_ord[i] == second:
+                            if mercury_dominance[i] == second_dominant[1]:
                                 break
-                            elif m_ord[i] == x[1]:
-                                two = x[0]
-                                second = x[1]
+                            elif mercury_dominance[i] == x[1]:
+                                self.second_dominant = x
                                 break
+        self.first_dominant = self.first_dominant[1]
+        self.second_dominant = self.second_dominant[1]
         # calculate equipment bonuses
         # something
         # calculate final stats based off base stats, djinn bonuses, class and equipment
