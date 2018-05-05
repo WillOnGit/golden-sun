@@ -7,6 +7,11 @@ These games are the best, and I always wanted a kind of sandbox to test out hypo
 To do this, I'll basically be creating a python program/script to make calculations according to the game mechanics.
 This will refer to a MySQL database which holds info on stats, monsters, abilities etc.
 
+# Fixed point arithmetic
+I discovered recently that the game probably uses fixed point arithmetic (.8) in all its calculations, which means I'm liable to run into rounding errors...
+
+For now, I'm going to proceed with integer calculations and see how accurate a first-draft finished product is. If it's useless, hopefully it won't be too difficult to convert the arithmetic and database.
+
 # FAQ
 - Isn't it overkill to build it in this way?—
 *Almost certainly, but I want to learn how to do this anyway so that's irrelevant*

@@ -15,8 +15,9 @@ gsdb = connection.cursor()
 
 # queries
 
-query_elemental = "SELECT venuspower, venusresist, marspower, marsresist, mercurypower, mercuryresist, jupiterpower, jupiterresist, element FROM stats_elemental WHERE name = %s"
+query_elemental = "SELECT venuspower, venusresist, marspower, marsresist, jupiterpower, jupiterresist, mercurypower, mercuryresist, element FROM stats_elemental WHERE name = %s"
 query_djinn = "SELECT HP, PP, ATT, DEF, AGI, LCK, element FROM djinni WHERE name = %s"
+query_class = "SELECT name, HP, PP, ATT, DEF, AGI, LCK FROM class WHERE venus <= %s AND mars <= %s AND jupiter <= %s AND mercury <=%s AND type = %s ORDER BY venus + mars + jupiter + mercury DESC LIMIT 1;"
 
 # static references/constants
 
@@ -31,6 +32,7 @@ class Adept(object):
     def __init__(self, adept_name = '', level = 0, HP_base = 0, PP_base = 0, ATT_base = 0, DEF_base = 0, AGI_base = 0, LCK_base = 0,\
             setdjinn = [], standbydjinn = [], weapon = "", shirt = "", trousers = "", boots = "", ring = "", undershirt = "", equipment = []):
         self.adept_name = adept_name
+        self.level = level
         self.HP_base = HP_base
         self.PP_base = PP_base
         self.ATT_base = ATT_base
@@ -54,12 +56,12 @@ class Adept(object):
         self.marslevel = 0
         self.mercurylevel = 0
         self.jupiterlevel = 0
-        self.djinni_HP_bonus = 0
-        self.djinni_PP_bonus = 0
-        self.djinni_ATT_bonus = 0
-        self.djinni_DEF_bonus = 0
-        self.djinni_AGI_bonus = 0
-        self.djinni_LCK_bonus = 0
+        self.djinn_HP_bonus = 0
+        self.djinn_PP_bonus = 0
+        self.djinn_ATT_bonus = 0
+        self.djinn_DEF_bonus = 0
+        self.djinn_AGI_bonus = 0
+        self.djinn_LCK_bonus = 0
         # calculate base elemental levels / power / resist
         gsdb.execute(query_elemental, (self.adept_name,))
         for (a,b,c,d,e,f,g,h,i) in gsdb:
@@ -67,32 +69,36 @@ class Adept(object):
             self.venusresist_base = b
             self.marspower_base = c
             self.marsresist_base = d
-            self.mercurypower_base = e
-            self.mercuryresist_base = f
-            self.jupiterpower_base = g
-            self.jupiterresist_base = h
+            self.jupiterpower_base = e
+            self.jupiterresist_base = f
+            self.mercurypower_base = g
+            self.mercuryresist_base = h
             if i == "venus":
                 self.alignment = "venus"
+                self.affinity = "mars"
                 self.venuslevel += 5
             if i == "mars":
                 self.alignment = "mars"
+                self.affinity = "venus"
                 self.marslevel += 5
             if i == "jupiter":
                 self.alignment = "jupiter"
+                self.affinity = "mercury"
                 self.jupiterlevel += 5
             if i == "mercury":
                 self.alignment = "mercury"
+                self.affinity = "jupiter"
                 self.mercurylevel += 5
         # calculate djinn bonuses
         for x in self.setdjinn:
             gsdb.execute(query_djinn, (x,))
             for (a,b,c,d,e,f,g) in gsdb:
-                self.djinni_HP_bonus += a
-                self.djinni_PP_bonus += b
-                self.djinni_ATT_bonus += c
-                self.djinni_DEF_bonus += d
-                self.djinni_AGI_bonus += e
-                self.djinni_LCK_bonus += f
+                self.djinn_HP_bonus += a
+                self.djinn_PP_bonus += b
+                self.djinn_ATT_bonus += c
+                self.djinn_DEF_bonus += d
+                self.djinn_AGI_bonus += e
+                self.djinn_LCK_bonus += f
                 if g == "venus":
                     self.venuslevel += 1
                 if g == "mars":
@@ -114,7 +120,7 @@ class Adept(object):
         self.dominance_array = [(self.venuslevel,"venus"),(self.marslevel,"mars"),(self.jupiterlevel,"jupiter"),(self.mercurylevel,"mercury")]
         self.first_dominant = (-1,"null")
         self.second_dominant = (-1,"null")
-        for x in dominance_array:
+        for x in self.dominance_array:
             if x[0] >= self.first_dominant[0]:
                 if x[0] > self.first_dominant[0]:
                     # clear winner
@@ -122,33 +128,33 @@ class Adept(object):
                     self.first_dominant = x
                 else:
                     # tiebreaks needed
-                    if alignment == "venus":
+                    if self.alignment == "venus":
                         for i in range(4):
-                            if venus_dominance[i] == first_dominant[1]:
+                            if venus_dominance[i] == self.first_dominant[1]:
                                 break
                             elif venus_dominance[i] == x[1]:
                                 self.second_dominant = self.first_dominant
                                 self.first_dominant = x
                                 break
-                    elif alignment == "mars":
+                    elif self.alignment == "mars":
                         for i in range(4):
-                            if mars_dominance[i] == first_dominant[1]:
+                            if mars_dominance[i] == self.first_dominant[1]:
                                 break
                             elif mars_dominance[i] == x[1]:
                                 self.second_dominant = self.first_dominant
                                 self.first_dominant = x
                                 break
-                    elif alignment == "jupiter":
+                    elif self.alignment == "jupiter":
                         for i in range(4):
-                            if jupiter_dominance[i] == first_dominant[1]:
+                            if jupiter_dominance[i] == self.first_dominant[1]:
                                 break
                             elif jupiter_dominance[i] == x[1]:
                                 self.second_dominant = self.first_dominant
                                 self.first_dominant = x
                                 break
-                    elif alignment == "mercury":
+                    elif self.alignment == "mercury":
                         for i in range(4):
-                            if mercury_dominance[i] == first_dominant[1]:
+                            if mercury_dominance[i] == self.first_dominant[1]:
                                 break
                             elif mercury_dominance[i] == x[1]:
                                 self.second_dominant = self.first_dominant
@@ -161,51 +167,119 @@ class Adept(object):
                     self.second_dominant = x
                 else:
                     # tiebreaks needed
-                    if alignment == "venus":
+                    if self.alignment == "venus":
                         for i in range(4):
-                            if venus_dominance[i] == second_dominant[1]:
+                            if venus_dominance[i] == self.second_dominant[1]:
                                 break
                             elif venus_dominance[i] == x[1]:
                                 self.second_dominant = x
                                 break
-                    elif alignment == "mars":
+                    elif self.alignment == "mars":
                         for i in range(4):
-                            if mars_dominance[i] == second_dominant[1]:
+                            if mars_dominance[i] == self.second_dominant[1]:
                                 break
                             elif mars_dominance[i] == x[1]:
                                 self.second_dominant = x
                                 break
-                    elif alignment == "jupiter":
+                    elif self.alignment == "jupiter":
                         for i in range(4):
-                            if jupiter_dominance[i] == second_dominant[1]:
+                            if jupiter_dominance[i] == self.second_dominant[1]:
                                 break
                             elif jupiter_dominance[i] == x[1]:
                                 self.second_dominant = x
                                 break
-                    elif alignment == "mercury":
+                    elif self.alignment == "mercury":
                         for i in range(4):
-                            if mercury_dominance[i] == second_dominant[1]:
+                            if mercury_dominance[i] == self.second_dominant[1]:
                                 break
                             elif mercury_dominance[i] == x[1]:
                                 self.second_dominant = x
                                 break
-        self.first_dominant = self.first_dominant[1]
-        self.second_dominant = self.second_dominant[1]
+        #self.first_dominant = self.first_dominant[1]
+        #self.second_dominant = self.second_dominant[1]
+        # class time
+        if False:#(how to do this?)
+            # item table
+            gsdb.execute(query_class, (self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel, "item"))
+            for (a,b,c,d,e,f,g) in gsdb:
+                self.adept_class = a
+                self.class_HP_mod = b
+                self.class_PP_mod = c
+                self.class_ATT_mod = d
+                self.class_DEF_mod = e
+                self.class_AGI_mod = f
+                self.class_LCK_mod = g
+        if self.second_dominant[0] == 0:
+            # primary djinni only
+            if self.adept_name == "jenna" or self.adept_name == "piers":
+                gsdb.execute(query_class, (self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel, "lostage"))
+                for (a,b,c,d,e,f,g) in gsdb:
+                    self.adept_class = a
+                    self.class_HP_mod = b
+                    self.class_PP_mod = c
+                    self.class_ATT_mod = d
+                    self.class_DEF_mod = e
+                    self.class_AGI_mod = f
+                    self.class_LCK_mod = g
+            else:
+                gsdb.execute(query_class, (self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel, "basic"))
+                for (a,b,c,d,e,f,g) in gsdb:
+                    self.adept_class = a
+                    self.class_HP_mod = b
+                    self.class_PP_mod = c
+                    self.class_ATT_mod = d
+                    self.class_DEF_mod = e
+                    self.class_AGI_mod = f
+                    self.class_LCK_mod = g
+        elif self.first_dominant == self.affinity or self.second_dominant == self.affinity:
+            # joint class table
+            if self.alignment == "venus" or "mars":
+                gsdb.execute(query_class, (self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel, "venus+mars"))
+                for (a,b,c,d,e,f,g) in gsdb:
+                    self.adept_class = a
+                    self.class_HP_mod = b
+                    self.class_PP_mod = c
+                    self.class_ATT_mod = d
+                    self.class_DEF_mod = e
+                    self.class_AGI_mod = f
+                    self.class_LCK_mod = g
+            else:
+                gsdb.execute(query_class, (self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel, "jupiter+mercury"))
+                for (a,b,c,d,e,f,g) in gsdb:
+                    self.adept_class = a
+                    self.class_HP_mod = b
+                    self.class_PP_mod = c
+                    self.class_ATT_mod = d
+                    self.class_DEF_mod = e
+                    self.class_AGI_mod = f
+                    self.class_LCK_mod = g
+        else:
+            # secondary dominant table
+            gsdb.execute(query_class, (self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel, self.second_dominant[1]))
+            for (a,b,c,d,e,f,g) in gsdb:
+                self.adept_class = a
+                self.class_HP_mod = b
+                self.class_PP_mod = c
+                self.class_ATT_mod = d
+                self.class_DEF_mod = e
+                self.class_AGI_mod = f
+                self.class_LCK_mod = g
+        
+        # class bonuses
         # calculate equipment bonuses
-        # something
+        self.item_HP_bonus = 0
+        self.item_PP_bonus = 0
+        self.item_ATT_bonus = 0
+        self.item_DEF_bonus = 0
+        self.item_AGI_bonus = 0
+        self.item_LCK_bonus = 0
         # calculate final stats based off base stats, djinn bonuses, class and equipment
-        self.HP_mod = 1.0
-        self.PP_mod = 1.0
-        self.ATT_mod = 1.0
-        self.DEF_mod = 1.0
-        self.AGI_mod = 1.0
-        self.LCK_mod = 1.0
-        #self.HP = self.
-        #self.PP = 
-        #self.ATT = 
-        #self.DEF = 
-        #self.AGI = 
-        #self.LCK = 
+        self.HP = int(round((self.HP_base + self.item_HP_bonus + self.djinn_HP_bonus) * self.class_HP_mod))
+        self.PP = int(round((self.PP_base + self.item_PP_bonus + self.djinn_PP_bonus) * self.class_PP_mod))
+        self.ATT = int(round((self.ATT_base + self.item_ATT_bonus + self.djinn_ATT_bonus) * self.class_ATT_mod))
+        self.DEF = int(round((self.DEF_base + self.item_DEF_bonus + self.djinn_DEF_bonus) * self.class_DEF_mod))
+        self.AGI = int(round((self.AGI_base + self.item_AGI_bonus + self.djinn_AGI_bonus) * self.class_AGI_mod))
+        self.LCK = int(round((self.LCK_base + self.item_LCK_bonus + self.djinn_LCK_bonus) * self.class_LCK_mod))
         return "ok"
 
     def equipWeapon(self, weapon):
@@ -241,10 +315,13 @@ isaac = Adept("Isaac")
 garet = Adept("Garet")
 ivan = Adept("Ivan")
 mia = Adept("Mia")
-felix = Adept("Felix")
+#felix = Adept("Felix")
 jenna = Adept("Jenna")
 sheba = Adept("Sheba")
 piers = Adept("Piers")
+
+felix = Adept(adept_name = 'Felix', level = 0, HP_base = 335, PP_base = 121, ATT_base = 181, DEF_base = 82, AGI_base = 152, LCK_base = 4,\
+            setdjinn = ["echo","iron","spritz","ember"], standbydjinn = [], weapon = "", shirt = "", trousers = "", boots = "", ring = "", undershirt = "", equipment = [])
 
 #gsdb.close()
 #connection.close()
