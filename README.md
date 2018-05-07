@@ -11,6 +11,8 @@ This will refer to a MySQL database which holds info on stats, monsters, abiliti
 I discovered recently that the game probably uses fixed point arithmetic (.8) in all its calculations, which means I'm liable to run into rounding errors...
 
 For now, I'm going to proceed with integer calculations and see how accurate a first-draft finished product is. If it's useless, hopefully it won't be too difficult to convert the arithmetic and database.
+## UPDATE:
+So, after testing the most basic set up which calclulates class and stats with djinn bonuses and some item bonuses, the totals never seem to be out by more than 1. It's maybe 50/50 whether it will be off-by-one or not. So I think it will be fine to leave it as is for now.
 
 # FAQ
 - Isn't it overkill to build it in this way?—

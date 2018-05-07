@@ -22,11 +22,11 @@ setting echo, iron, spritz, ember, it reckons he has:
 
 """
 
-HP = 372
-PP = 120
-ATT = 202
-DEF = 94
-AGI = 144
+HP = 368
+PP = 97
+ATT = 199
+DEF = 82
+AGI = 167
 LCK = 4
 
 HP_mod = 1.1
@@ -77,6 +77,9 @@ def base_from_stats(HP,PP,ATT,DEF,AGI,LCK):
     print stats_from_base(HP_base + 1, PP_base + 1, ATT_base + 1, DEF_base + 1, AGI_base + 1, LCK_base + 1)
     print "======== End Comparison ========"
     return (HP_base, PP_base, ATT_base, DEF_base, AGI_base, LCK_base)
+
+x = base_from_stats(HP,PP,ATT,DEF,AGI,LCK)
+print x
 
 def stats_from_base(HP_base,PP_base,ATT_base,DEF_base,AGI_base,LCK_base):
     HP_premod = HP_base + HP_item + HP_djinn

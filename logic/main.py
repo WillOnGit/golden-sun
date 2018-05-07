@@ -18,6 +18,12 @@ gsdb = connection.cursor()
 query_elemental = "SELECT venuspower, venusresist, marspower, marsresist, jupiterpower, jupiterresist, mercurypower, mercuryresist, element FROM stats_elemental WHERE name = %s"
 query_djinn = "SELECT HP, PP, ATT, DEF, AGI, LCK, element FROM djinni WHERE name = %s"
 query_class = "SELECT name, HP, PP, ATT, DEF, AGI, LCK FROM class WHERE venus <= %s AND mars <= %s AND jupiter <= %s AND mercury <=%s AND type = %s ORDER BY venus + mars + jupiter + mercury DESC LIMIT 1;"
+query_weapon = "SELECT ATT from weapon WHERE name = %s"
+query_head = "SELECT DEF from armor WHERE name = %s"
+query_chest = "SELECT DEF from armor WHERE name = %s"
+query_shield = "SELECT DEF from armor WHERE name = %s"
+query_boots = "SELECT DEF from armor WHERE name = %s"
+query_undershirt = "SELECT DEF from armor WHERE name = %s"
 
 # static references/constants
 
@@ -30,7 +36,7 @@ jupiter_dominance = ("jupiter","mars","venus","mercury")
 class Adept(object):
 
     def __init__(self, adept_name = '', level = 0, HP_base = 0, PP_base = 0, ATT_base = 0, DEF_base = 0, AGI_base = 0, LCK_base = 0,\
-            setdjinn = [], standbydjinn = [], weapon = "", shirt = "", trousers = "", boots = "", ring = "", undershirt = "", equipment = []):
+            setdjinn = [], standbydjinn = [], weapon = "", head = "", chest = "", shield = "", boots = "", ring = "", undershirt = "", equipment = []):
         self.adept_name = adept_name
         self.level = level
         self.HP_base = HP_base
@@ -42,8 +48,9 @@ class Adept(object):
         self.setdjinn = setdjinn
         self.standbydjinn = standbydjinn
         self.weapon = weapon
-        self.shirt = shirt
-        self.trousers = trousers
+        self.head = head
+        self.chest = chest
+        self.shield = shield
         self.boots = boots
         self.ring = ring
         self.undershirt = undershirt
@@ -202,68 +209,68 @@ class Adept(object):
             # item table
             gsdb.execute(query_class, (self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel, "item"))
             for (a,b,c,d,e,f,g) in gsdb:
-                self.adept_class = a
-                self.class_HP_mod = b
-                self.class_PP_mod = c
-                self.class_ATT_mod = d
-                self.class_DEF_mod = e
-                self.class_AGI_mod = f
-                self.class_LCK_mod = g
+                self.adept_class = str(a)
+                self.class_HP_mod = float(b)
+                self.class_PP_mod = float(c)
+                self.class_ATT_mod = float(d)
+                self.class_DEF_mod = float(e)
+                self.class_AGI_mod = float(f)
+                self.class_LCK_mod = float(g)
         if self.second_dominant[0] == 0:
             # primary djinni only
             if self.adept_name == "jenna" or self.adept_name == "piers":
                 gsdb.execute(query_class, (self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel, "lostage"))
                 for (a,b,c,d,e,f,g) in gsdb:
-                    self.adept_class = a
-                    self.class_HP_mod = b
-                    self.class_PP_mod = c
-                    self.class_ATT_mod = d
-                    self.class_DEF_mod = e
-                    self.class_AGI_mod = f
-                    self.class_LCK_mod = g
+                    self.adept_class = str(a)
+                    self.class_HP_mod = float(b)
+                    self.class_PP_mod = float(c)
+                    self.class_ATT_mod = float(d)
+                    self.class_DEF_mod = float(e)
+                    self.class_AGI_mod = float(f)
+                    self.class_LCK_mod = float(g)
             else:
                 gsdb.execute(query_class, (self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel, "basic"))
                 for (a,b,c,d,e,f,g) in gsdb:
-                    self.adept_class = a
-                    self.class_HP_mod = b
-                    self.class_PP_mod = c
-                    self.class_ATT_mod = d
-                    self.class_DEF_mod = e
-                    self.class_AGI_mod = f
-                    self.class_LCK_mod = g
-        elif self.first_dominant == self.affinity or self.second_dominant == self.affinity:
+                    self.adept_class = str(a)
+                    self.class_HP_mod = float(b)
+                    self.class_PP_mod = float(c)
+                    self.class_ATT_mod = float(d)
+                    self.class_DEF_mod = float(e)
+                    self.class_AGI_mod = float(f)
+                    self.class_LCK_mod = float(g)
+        elif self.first_dominant[1] == self.affinity or self.second_dominant[1] == self.affinity:
             # joint class table
             if self.alignment == "venus" or "mars":
                 gsdb.execute(query_class, (self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel, "venus+mars"))
                 for (a,b,c,d,e,f,g) in gsdb:
-                    self.adept_class = a
-                    self.class_HP_mod = b
-                    self.class_PP_mod = c
-                    self.class_ATT_mod = d
-                    self.class_DEF_mod = e
-                    self.class_AGI_mod = f
-                    self.class_LCK_mod = g
+                    self.adept_class = str(a)
+                    self.class_HP_mod = float(b)
+                    self.class_PP_mod = float(c)
+                    self.class_ATT_mod = float(d)
+                    self.class_DEF_mod = float(e)
+                    self.class_AGI_mod = float(f)
+                    self.class_LCK_mod = float(g)
             else:
                 gsdb.execute(query_class, (self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel, "jupiter+mercury"))
                 for (a,b,c,d,e,f,g) in gsdb:
-                    self.adept_class = a
-                    self.class_HP_mod = b
-                    self.class_PP_mod = c
-                    self.class_ATT_mod = d
-                    self.class_DEF_mod = e
-                    self.class_AGI_mod = f
-                    self.class_LCK_mod = g
+                    self.adept_class = str(a)
+                    self.class_HP_mod = float(b)
+                    self.class_PP_mod = float(c)
+                    self.class_ATT_mod = float(d)
+                    self.class_DEF_mod = float(e)
+                    self.class_AGI_mod = float(f)
+                    self.class_LCK_mod = float(g)
         else:
             # secondary dominant table
             gsdb.execute(query_class, (self.venuslevel, self.marslevel, self.jupiterlevel, self.mercurylevel, self.second_dominant[1]))
             for (a,b,c,d,e,f,g) in gsdb:
-                self.adept_class = a
-                self.class_HP_mod = b
-                self.class_PP_mod = c
-                self.class_ATT_mod = d
-                self.class_DEF_mod = e
-                self.class_AGI_mod = f
-                self.class_LCK_mod = g
+                self.adept_class = str(a)
+                self.class_HP_mod = float(b)
+                self.class_PP_mod = float(c)
+                self.class_ATT_mod = float(d)
+                self.class_DEF_mod = float(e)
+                self.class_AGI_mod = float(f)
+                self.class_LCK_mod = float(g)
         
         # class bonuses
         # calculate equipment bonuses
@@ -273,6 +280,24 @@ class Adept(object):
         self.item_DEF_bonus = 0
         self.item_AGI_bonus = 0
         self.item_LCK_bonus = 0
+        gsdb.execute(query_weapon, (self.weapon,))
+        for (a,) in gsdb:
+            self.item_ATT_bonus += a
+        gsdb.execute(query_head, (self.head,))
+        for (a,) in gsdb:
+            self.item_DEF_bonus += a
+        gsdb.execute(query_chest, (self.chest,))
+        for (a,) in gsdb:
+            self.item_DEF_bonus += a
+        gsdb.execute(query_shield, (self.shield,))
+        for (a,) in gsdb:
+            self.item_DEF_bonus += a
+        gsdb.execute(query_boots, (self.boots,))
+        for (a,) in gsdb:
+            self.item_DEF_bonus += a
+        gsdb.execute(query_undershirt, (self.undershirt,))
+        for (a,) in gsdb:
+            self.item_DEF_bonus += a
         # calculate final stats based off base stats, djinn bonuses, class and equipment
         self.HP = int(round((self.HP_base + self.item_HP_bonus + self.djinn_HP_bonus) * self.class_HP_mod))
         self.PP = int(round((self.PP_base + self.item_PP_bonus + self.djinn_PP_bonus) * self.class_PP_mod))
@@ -309,6 +334,19 @@ class Monster(object):
             venuspower, marspower, mercurypower, jupiterpower, venusresist, marsresist, mercuryresist, jupiterresist):
         print "hello"
 
+# 'helper' functions
+def print_adept_stats(adept):
+    print adept.adept_name
+    print adept.adept_class
+    print "HP = %d" % (adept.HP)
+    print "PP = %d" % (adept.PP)
+    print "ATT = %d" % (adept.ATT)
+    print "DEF = %d" % (adept.DEF)
+    print "AGI = %d" % (adept.AGI)
+    print "LCK = %d" % (adept.LCK)
+    print adept.setdjinn
+    return 0
+
 # basic initialisation
 
 isaac = Adept("Isaac")
@@ -320,8 +358,8 @@ jenna = Adept("Jenna")
 sheba = Adept("Sheba")
 piers = Adept("Piers")
 
-felix = Adept(adept_name = 'Felix', level = 0, HP_base = 335, PP_base = 121, ATT_base = 181, DEF_base = 82, AGI_base = 152, LCK_base = 4,\
-            setdjinn = ["echo","iron","spritz","ember"], standbydjinn = [], weapon = "", shirt = "", trousers = "", boots = "", ring = "", undershirt = "", equipment = [])
+felix = Adept(adept_name = 'Felix', level = 39, HP_base = 335, PP_base = 121, ATT_base = 181, DEF_base = 82, AGI_base = 152, LCK_base = 4,\
+            setdjinn = ["echo","iron","steel","mud","flower","meld","petra","salt","mold"], standbydjinn = [], weapon = "Sol Blade", head = "Thorn Crown", chest = "Erinyes Tunic", shield = "War Gloves", boots = "Hyper Boots", ring = "", undershirt = "Golden Shirt", equipment = [])
 
 #gsdb.close()
 #connection.close()
