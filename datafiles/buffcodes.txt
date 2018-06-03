@@ -1,0 +1,13 @@
+CODES
+
+hpm hpr
+ppm ppr
+
+vep ver
+map mar
+jup jur
+mep mer
+
+agi lck
+
+cri
