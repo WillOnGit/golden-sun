@@ -1,0 +1,99 @@
+9,vep+20 ver+20
+21,jup+10
+47,hpr+3
+49,hpr+2
+76,ppm+20
+81,ver+15 mer+15 mar+15 jur+15
+82,mer+30 mar+30
+83,jur-10
+84,hpr+8
+85,cri+6
+91,mer+20
+92,ppm+8
+93,agix1.5
+95,mer+30 mar+20
+96,mer+30 mar+30 jur+30
+97,mar+10 agi+10
+98,agi+30 jur+10
+108,ppm+15
+109,hpr+5
+110,ppr+2
+111,hpr+20 ppr+10
+112,jup+20 jur+30 agi+30
+113,mer+40 hpr+10
+123,mar+30
+124,ver+20
+132,vep+5 mep+5 map+5 jup+5
+140,vep+10 mep+10
+141,map+10 jup+10
+151,vep+10 cri+10
+152,ppmx1.2
+159,lck+5
+160,agi+20
+161,ppr+3 cri+8
+162,ppr+4
+170,ppr+3
+250,hpm+5
+251,lck+1
+252,agi+15
+256,cri+12
+257,agi+20
+258,mer+15
+259,agix0.5
+#328 trident! duplicate id, but not to be imported yet anyway mer+20
+328,vep+10 mep+10 map+10 jup+10
+329,mer+15 mar+15
+330,hpm+30
+331,ver-10
+333,mer+20 jur+20
+334,lck+7
+335,hpr+6
+336,cri+20
+339,cri+15
+341,agi+40
+343,lck+10
+344,cri+10
+345,mep+30 mer+70
+347,mer+18 mar+18
+348,map+20 mar+40
+349,hpr+10
+350,jup+15 jur+50
+351,lck+15 mar+30 ppr+12
+353,ver+30
+354,mer+15 mar+15
+355,mar+60
+357,ver+20 mer+20 mar+20 jur+20
+358,jur+50
+359,cri+10
+361,agi+30 jup+20
+362,hpm+30
+363,map+40
+365,cri+20
+366,ppm+20
+368,mep+25
+369,cri+10
+371,ppm+30
+372,jup+30
+374,mer+20 mar+20
+375,cri+12
+377,hpm+20
+378,mer+30
+379,hpr+10
+380,ppm+20
+382,lckx1.2 jur+20
+387,ppr+8
+390,mep+20
+391,ppm+15
+392,ppr+12
+393,cri+15
+394,jup+15
+395,lck+10
+398,lck+5
+400,hpm+10
+401,hpr+5
+403,ver+10 mer+10 mar+10
+404,agix0.7
+405,hpm+5
+406,lck+4
+407,cri+15
+# ring, not to be imported yet 414,hpm+20
