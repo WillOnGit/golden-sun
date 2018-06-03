@@ -6,8 +6,8 @@
 81,ver+15 mer+15 mar+15 jur+15
 82,mer+30 mar+30
 83,jur-10
-84,hpr+8
-85,cri+6
+84,hpr+8 att+5
+85,cri+6 att+10
 91,mer+20
 92,ppm+8
 93,agix1.5
@@ -23,7 +23,10 @@
 113,mer+40 hpr+10
 123,mar+30
 124,ver+20
+130,att+5
+131,att+10
 132,vep+5 mep+5 map+5 jup+5
+133,att+8
 140,vep+10 mep+10
 141,map+10 jup+10
 151,vep+10 cri+10
@@ -45,6 +48,7 @@
 329,mer+15 mar+15
 330,hpm+30
 331,ver-10
+332,att+12
 333,mer+20 jur+20
 334,lck+7
 335,hpr+6
@@ -52,7 +56,7 @@
 339,cri+15
 341,agi+40
 343,lck+10
-344,cri+10
+344,cri+10 att+5
 345,mep+30 mer+70
 347,mer+18 mar+18
 348,map+20 mar+40
@@ -62,13 +66,15 @@
 353,ver+30
 354,mer+15 mar+15
 355,mar+60
+356,att+5
 357,ver+20 mer+20 mar+20 jur+20
 358,jur+50
 359,cri+10
 361,agi+30 jup+20
 362,hpm+30
 363,map+40
-365,cri+20
+364,att+5
+365,cri+20 att+15
 366,ppm+20
 368,mep+25
 369,cri+10
@@ -76,11 +82,13 @@
 372,jup+30
 374,mer+20 mar+20
 375,cri+12
+376,att+10
 377,hpm+20
 378,mer+30
 379,hpr+10
 380,ppm+20
 382,lckx1.2 jur+20
+384,att+8
 387,ppr+8
 390,mep+20
 391,ppm+15
@@ -88,6 +96,7 @@
 393,cri+15
 394,jup+15
 395,lck+10
+396,att+15
 398,lck+5
 400,hpm+10
 401,hpr+5
@@ -96,4 +105,5 @@
 405,hpm+5
 406,lck+4
 407,cri+15
+408,att+15
 # ring, not to be imported yet 414,hpm+20
